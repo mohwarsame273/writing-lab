@@ -1,0 +1,29 @@
+.web
+.states
+assets/external/
+# Reflex
+.web/
+.states/
+*.db
+reflex.lock/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# App
+.progress.json
+knowledge/embeddings.npy
+
+# Env / secrets
+.env
+.env.*
+variables.env
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

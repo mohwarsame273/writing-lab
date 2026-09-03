@@ -1,0 +1,12 @@
+{
+  "academic": {
+    "bands": ["Task fulfilment", "Clarity", "Sentence control", "Meaning preservation", "Concision"],
+    "each_out_of": 20,
+    "pass_mark": 70
+  },
+  "literary": {
+    "bands": ["Task fulfilment", "Voice", "Rhythm and variation", "Concrete imagery", "Restraint"],
+    "each_out_of": 20,
+    "pass_mark": 70
+  }
+}

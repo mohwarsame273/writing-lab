@@ -1,0 +1,2336 @@
+[
+  {
+    "rule_id": "RHET-ALLIT-001",
+    "title": "Alliteration: repeat initial sounds for music",
+    "track": "literary",
+    "skills": [
+      "rhetorical-devices",
+      "sound-play"
+    ],
+    "principle": "Repeat the same initial consonant sound across nearby stressed words to add rhythm and memorability. Keep it light: a couplet of two or three matched sounds lands; a fourth tips into a tongue-twister.",
+    "weak_examples": [
+      "The big brown bear bounded briskly by the babbling brook."
+    ],
+    "strong_examples": [
+      "The soft, silent snow settled on the sill.",
+      "A weary wind worried the water."
+    ],
+    "exceptions": [
+      "Overuse reads as gimmick. Cap a run at three or four matched sounds.",
+      "Alliteration on unstressed syllables is inaudible and wasted."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-POLYP-001",
+    "title": "Polyptoton: repeat a root in different forms",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "repetition"
+    ],
+    "principle": "Repeat words built from the same root but in different grammatical forms. The echo binds the clause and signals a turn of thought.",
+    "weak_examples": [
+      "Please make me happy by pleasing me."
+    ],
+    "strong_examples": [
+      "Please, please me.",
+      "Love is not love which alters when it alteration finds.",
+      "The Greeks are strong, and skilful to their strength."
+    ],
+    "exceptions": [
+      "Works best on a single, deliberate pairing. Scattered repeats blur it."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-ANTITH-001",
+    "title": "Antithesis: set contrasts in parallel",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "antithesis",
+      "parallelism"
+    ],
+    "principle": "Place opposing ideas in matched grammatical frames so the contrast rings out. The shape is if X is Y, then not-X is not-Y. We understand what a thing is by naming what it is not.",
+    "weak_examples": [
+      "Life is good and death is a completely different and unpleasant experience."
+    ],
+    "strong_examples": [
+      "Life is sweet, death is sour.",
+      "Wicked women bother one; good women bore one.",
+      "We come to understand who we are by understanding who we are not."
+    ],
+    "exceptions": [
+      "Needs both true parallelism and a real opposition. A fake contrast reads as a trick."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-PROGR-001",
+    "title": "Progressio: build a cumulative series of antitheses",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "parallelism",
+      "sentence-structure"
+    ],
+    "principle": "Stack a long, rhythmic list, often of paired opposites, to build force through accumulation. Each clause raises the stakes of the last.",
+    "weak_examples": [
+      "It was a good time and also a bad time and people felt various ways."
+    ],
+    "strong_examples": [
+      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness.",
+      "It was the season of light, it was the season of darkness."
+    ],
+    "exceptions": [
+      "The cadence must stay regular or the accumulation collapses into a list.",
+      "End on the strongest or most surprising pair."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-MERISM-001",
+    "title": "Merism: name the parts to mean the whole",
+    "track": "literary",
+    "skills": [
+      "rhetorical-devices",
+      "imagery"
+    ],
+    "principle": "Refer to a totality by naming its parts or its extremes. It gestures at completeness without an exhaustive inventory.",
+    "weak_examples": [
+      "Everyone of every kind and description was invited."
+    ],
+    "strong_examples": [
+      "Ladies and gentlemen.",
+      "They searched high and low.",
+      "For better, for worse, for richer, for poorer."
+    ],
+    "exceptions": [
+      "A blazon is a merism pushed too far; keep the parts few and telling."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-BLAZON-001",
+    "title": "Blazon: catalogue a subject's features",
+    "track": "literary",
+    "skills": [
+      "rhetorical-devices",
+      "imagery"
+    ],
+    "principle": "Itemise the features of a person or scene, most classically a beloved, feature by feature. The inventory conveys attention and desire.",
+    "weak_examples": [
+      "She was beautiful in a general and unspecified way."
+    ],
+    "strong_examples": [
+      "Her eyes were slate, her hands quick, her laugh three notes falling."
+    ],
+    "exceptions": [
+      "The convention is heavily parodied (Shakespeare's Sonnet 130). Subvert or freshen it, or it reads as pastiche."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-SYNAE-001",
+    "title": "Synaesthesia: describe one sense through another",
+    "track": "literary",
+    "skills": [
+      "rhetorical-devices",
+      "imagery"
+    ],
+    "principle": "Describe a perception in the vocabulary of a different sense. The cross-wiring forces the reader to pause and build the image.",
+    "weak_examples": [
+      "The music was very loud and quite pleasant to listen to."
+    ],
+    "strong_examples": [
+      "A loud shirt.",
+      "A silky voice.",
+      "The silence tasted of chalk and cold tea."
+    ],
+    "exceptions": [
+      "One crossed sense per image. Piling them up muddies rather than sharpens."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-APOSI-001",
+    "title": "Aposiopesis: break off into meaningful silence",
+    "track": "literary",
+    "skills": [
+      "rhetorical-devices",
+      "understatement"
+    ],
+    "principle": "Break a sentence off unfinished, trailing into an ellipsis, so the reader completes the threat, grief or implication.",
+    "weak_examples": [
+      "If you do that again I will be extremely displeased with you."
+    ],
+    "strong_examples": [
+      "Why, you...",
+      "If she finds out, well..."
+    ],
+    "exceptions": [
+      "Only works when the unsaid thing is obvious. A vague trail-off just reads as a lost thread."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-ADJORD-001",
+    "title": "Adjective order: follow OSASCOMP",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "word-order",
+      "modifiers"
+    ],
+    "principle": "Stack multiple adjectives in the conventional English order: opinion, size, age, shape, colour, origin, material, purpose, then the noun. Break it and native readers hear the wrongness even if they cannot name it.",
+    "weak_examples": [
+      "A green lovely little knife.",
+      "A silver old whittling French knife."
+    ],
+    "strong_examples": [
+      "A lovely little old rectangular green French silver whittling knife."
+    ],
+    "exceptions": [
+      "Rarely stack more than three. Beyond that, recast with commas or clauses."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-HYPER-001",
+    "title": "Hyperbaton: disturb word order for emphasis",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "word-order",
+      "sentence-structure"
+    ],
+    "principle": "Depart from normal word order to throw weight onto a displaced word. The strangeness itself signals importance.",
+    "weak_examples": [
+      "Stone walls do not make a prison."
+    ],
+    "strong_examples": [
+      "Stone walls do not a prison make.",
+      "This much I know."
+    ],
+    "exceptions": [
+      "Every inversion costs clarity. Spend the cost only where the emphasis earns it."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-ANADI-001",
+    "title": "Anadiplosis: chain clauses by repeating the last word",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "repetition"
+    ],
+    "principle": "Repeat the last word of one clause as the first word of the next, building a chain of consequence.",
+    "weak_examples": [
+      "Suffering builds character and eventually a kind of faith results from it."
+    ],
+    "strong_examples": [
+      "Suffering breeds character; character breeds faith; and faith, in the end, does not disappoint.",
+      "Fear leads to anger; anger leads to hate."
+    ],
+    "exceptions": [
+      "The links must be genuinely causal or sequential, or the chain feels mechanical."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-PERIOD-001",
+    "title": "Periodic sentence: withhold the main clause to the end",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "sentence-structure"
+    ],
+    "principle": "Suspend the main clause until the close of the sentence, piling subordinate clauses first, so meaning resolves only at the full stop. Contrast with the loose sentence, which states its point first.",
+    "weak_examples": [
+      "The towers and palaces and temples will all dissolve like a dream, so long as you remember this."
+    ],
+    "strong_examples": [
+      "So long as you begin clause after clause with when, or if, or though, and so long as you do not blurt the verb too early, the sentence will hold its breath until the end."
+    ],
+    "exceptions": [
+      "Do not release the main verb too soon. Keep the suspense meaningful, not merely long."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-HYPOT-001",
+    "title": "Hypotaxis: subordinate to show hierarchy",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "sentence-structure",
+      "subordination"
+    ],
+    "principle": "Build long sentences whose subordinate clauses are ranked under a main clause, making logical hierarchy explicit. It suits analysis where relations between ideas matter.",
+    "weak_examples": [
+      "It rained. We stayed in. We were bored. Time passed."
+    ],
+    "strong_examples": [
+      "Because the rain had set in for the afternoon, we stayed indoors, where, having exhausted the games, we grew bored as the hours passed."
+    ],
+    "exceptions": [
+      "Overlong hypotaxis loses the reader. Balance it against short paratactic sentences for rhythm."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-POLYS-001",
+    "title": "Polysyndeton: multiply the conjunctions",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "sentence-structure",
+      "repetition"
+    ],
+    "principle": "Deliberately repeat conjunctions between items where grammar would drop them, to slow the pace and pile up weight.",
+    "weak_examples": [
+      "He took bread, blessed it, broke it and gave it to them."
+    ],
+    "strong_examples": [
+      "And he took bread, and blessed it, and brake it, and gave it to his disciples."
+    ],
+    "exceptions": [
+      "The effect is cumulative and biblical; used casually it just looks like a comma error."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-ASYND-001",
+    "title": "Asyndeton: drop the conjunctions",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "sentence-structure"
+    ],
+    "principle": "Omit conjunctions between items to quicken the pace and land the series like blows.",
+    "weak_examples": [
+      "I came, and I saw, and then I conquered."
+    ],
+    "strong_examples": [
+      "I came, I saw, I conquered.",
+      "Read it, mark it, learn it."
+    ],
+    "exceptions": [
+      "Best on short, parallel items. On long clauses it can read as a run-on."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-DIACO-001",
+    "title": "Diacope: repeat a word around an interruption",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "repetition"
+    ],
+    "principle": "Repeat a word or phrase with a brief interruption between, framing the interruption like a sandwich (ABA).",
+    "weak_examples": [
+      "My kingdom is worth a horse to me right now."
+    ],
+    "strong_examples": [
+      "A horse, a horse, my kingdom for a horse.",
+      "Bond. James Bond."
+    ],
+    "exceptions": [
+      "Keep the interruption short, or the echo is lost."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-EROTE-001",
+    "title": "Erotesis: the rhetorical question that asserts",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "rhetorical-questions"
+    ],
+    "principle": "Ask a question whose answer is obvious, so the question functions as an emphatic statement.",
+    "weak_examples": [
+      "That koala is quite cute, in my opinion."
+    ],
+    "strong_examples": [
+      "How cute is that koala?",
+      "And did those feet in ancient time walk upon England's mountains green?"
+    ],
+    "exceptions": [
+      "Only works when the answer really is beyond dispute. Otherwise it invites the wrong reply."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-EPIPL-001",
+    "title": "Epiplexis: the question as reproach or grief",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "rhetorical-questions"
+    ],
+    "principle": "Ask a question to voice reproach, grief or disdain, not to seek an answer.",
+    "weak_examples": [
+      "I am disappointed in your behaviour."
+    ],
+    "strong_examples": [
+      "How could you?",
+      "Why, God?",
+      "What makes your heart so hard?"
+    ],
+    "exceptions": [
+      "Tone is everything; on the page it needs context or it reads as a genuine query."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-ANACO-001",
+    "title": "Anacoenosis: appeal to shared judgement",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "rhetorical-questions"
+    ],
+    "principle": "Put a question to the audience that presumes a shared value or interest, drawing them into agreement.",
+    "weak_examples": [
+      "My economic policy is the most trustworthy one available."
+    ],
+    "strong_examples": [
+      "Who do you trust to run the economy?",
+      "Which of us would not do the same for our children?"
+    ],
+    "exceptions": [
+      "Politicians lean on this; overused it feels manipulative. Earn the shared premise."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-HYPOP-001",
+    "title": "Hypophora: ask, then answer",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "rhetorical-questions"
+    ],
+    "principle": "Raise a question and immediately answer it yourself, controlling both the objection and the reply.",
+    "weak_examples": [
+      "It is possible to kick it, and the answer to whether one can is yes."
+    ],
+    "strong_examples": [
+      "Can I kick it? Yes, you can.",
+      "How do I love thee? Let me count the ways."
+    ],
+    "exceptions": [
+      "The answer must genuinely satisfy the question, or the device feels like a dodge."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-ANTHY-001",
+    "title": "Anthypophora: sustained question and answer",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "rhetorical-questions"
+    ],
+    "principle": "Extend hypophora across several linked questions and answers to drive an argument to its climax.",
+    "weak_examples": [
+      "Our policy is to fight and our aim is to win."
+    ],
+    "strong_examples": [
+      "You ask, what is our policy? To wage war. You ask, what is our aim? Victory, victory at all costs."
+    ],
+    "exceptions": [
+      "Keep the parallel frame (you ask... I answer...) or the momentum breaks."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-SUBJE-001",
+    "title": "Subjectio: drive a point with a chain of questions",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "rhetorical-questions"
+    ],
+    "principle": "Subject the listener to a rapid series of pointed questions that corner them into your conclusion.",
+    "weak_examples": [
+      "You should not disrespect him, because he does not deserve it."
+    ],
+    "strong_examples": [
+      "Does he look like a fool to you? Then why speak to him as one?"
+    ],
+    "exceptions": [
+      "The questions must tighten toward one inevitable answer, not wander."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-APORI-001",
+    "title": "Aporia: the question that admits real doubt",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "rhetorical-questions"
+    ],
+    "principle": "Pose a question you genuinely cannot answer, staging authentic doubt rather than scoring a point.",
+    "weak_examples": [
+      "I am unsure whether continuing is worthwhile."
+    ],
+    "strong_examples": [
+      "To be, or not to be, that is the question.",
+      "How many roads must a man walk down?"
+    ],
+    "exceptions": [
+      "Distinct from erotesis: here the uncertainty must be real, or it rings false."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-HENDI-001",
+    "title": "Hendiadys: split one idea into two nouns",
+    "track": "literary",
+    "skills": [
+      "rhetorical-devices",
+      "sound-play"
+    ],
+    "principle": "Express a single idea, normally a noun with its adjective, as two nouns joined by and. The pairing removes the grammatical hierarchy and doubles the force.",
+    "weak_examples": [
+      "The furious sound signified nothing."
+    ],
+    "strong_examples": [
+      "Sound and fury.",
+      "Law and order.",
+      "By her beauty and the moonlight you were undone."
+    ],
+    "exceptions": [
+      "The two nouns must feel level, holding hands; if one obviously governs the other, it is just a phrase."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-EPIST-001",
+    "title": "Epistrophe: repeat the same word at the end",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "repetition"
+    ],
+    "principle": "End successive clauses, sentences or paragraphs with the same word or phrase. It is the figure of obsession, driving home a conclusion the speaker cannot escape.",
+    "weak_examples": [
+      "I will be present wherever there is hunger or injustice."
+    ],
+    "strong_examples": [
+      "Wherever there is a fight so hungry people can eat, I'll be there. Wherever there is a cop beating a man, I'll be there."
+    ],
+    "exceptions": [
+      "Needs at least three beats to register as a pattern. Fewer reads as accident."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-ANAPH-001",
+    "title": "Anaphora: repeat the same word at the start",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "repetition"
+    ],
+    "principle": "Begin successive clauses or sentences with the same word or phrase. It builds cumulative force and cadence; it is the mirror image of epistrophe.",
+    "weak_examples": [
+      "We will fight in many places and never surrender at any of them."
+    ],
+    "strong_examples": [
+      "We shall fight on the beaches, we shall fight on the landing grounds, we shall fight in the fields.",
+      "We must act. We must act now. We must act together."
+    ],
+    "exceptions": [
+      "Three or four beats is the sweet spot. Beyond that it turns to chant."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-TRICO-001",
+    "title": "Tricolon: say it in three",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "parallelism"
+    ],
+    "principle": "Cast an idea as three parallel elements. Three is the smallest number that makes a pattern, and an ascending tricolon (each element longer or weightier) closes with a punch.",
+    "weak_examples": [
+      "Friends and countrymen, please listen to me."
+    ],
+    "strong_examples": [
+      "Friends, Romans, countrymen.",
+      "Life, liberty, and the pursuit of happiness.",
+      "Government of the people, by the people, for the people."
+    ],
+    "exceptions": [
+      "Keep the three grammatically matched. A mismatched member breaks the spell (see parallelism)."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-CHIAS-001",
+    "title": "Chiasmus and antimetabole: invert the parallel",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "antithesis",
+      "parallelism"
+    ],
+    "principle": "Mirror a structure in reverse order (ABBA). When the same words return reversed it is antimetabole, which yokes two ideas into a single memorable turn.",
+    "weak_examples": [
+      "You should ask what you can do for your country rather than the reverse."
+    ],
+    "strong_examples": [
+      "Ask not what your country can do for you; ask what you can do for your country.",
+      "When the going gets tough, the tough get going."
+    ],
+    "exceptions": [
+      "The reversal must produce a real shift in meaning, not just a shuffled echo."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-ZEUGM-001",
+    "title": "Zeugma and syllepsis: one word, two yokes",
+    "track": "literary",
+    "skills": [
+      "rhetorical-devices",
+      "sound-play"
+    ],
+    "principle": "Let one word, often a verb, govern two others, ideally pulling in two different senses at once for wit or surprise.",
+    "weak_examples": [
+      "She broke his car, and she also broke his heart."
+    ],
+    "strong_examples": [
+      "She broke his car and his heart.",
+      "He lost his coat and his temper."
+    ],
+    "exceptions": [
+      "The double sense should feel deft, not strained. Forced yokings read as puns for their own sake."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-LITOT-001",
+    "title": "Litotes: understate through the negative",
+    "track": "both",
+    "skills": [
+      "rhetorical-devices",
+      "understatement"
+    ],
+    "principle": "Affirm something by denying its opposite. The understatement is often drier and more persuasive than a bare superlative, and it doubles as careful academic hedging.",
+    "weak_examples": [
+      "This is an extremely impressive and important result."
+    ],
+    "strong_examples": [
+      "This is no small achievement.",
+      "The result is not unimpressive.",
+      "She was not unfamiliar with the argument."
+    ],
+    "exceptions": [
+      "Double negatives can obscure meaning if stacked. Use one layer, deliberately."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "RHET-METON-001",
+    "title": "Metonymy and synecdoche: name by association or part",
+    "track": "literary",
+    "skills": [
+      "rhetorical-devices",
+      "imagery"
+    ],
+    "principle": "Refer to a thing by something associated with it (metonymy: the crown, the press) or by a part standing for the whole (synecdoche: all hands on deck, wheels for a car).",
+    "weak_examples": [
+      "The monarchy issued a formal statement to the newspapers."
+    ],
+    "strong_examples": [
+      "The crown issued a statement to the press.",
+      "All hands on deck.",
+      "He bought a new set of wheels."
+    ],
+    "exceptions": [
+      "The stand-in must be recognisable to the reader, or the reference simply puzzles."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Rhetorical tricks"
+    }
+  },
+  {
+    "rule_id": "GRAM-INFPH-001",
+    "title": "Infinitive phrase",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "phrases",
+      "verb-forms"
+    ],
+    "principle": "An infinitive phrase opens with the base verb plus to and can act as a noun, adjective or adverb, often expressing purpose.",
+    "weak_examples": [
+      "She wanted finishing her shift without spilling a pizza."
+    ],
+    "strong_examples": [
+      "To finish her shift without spilling a pizza is Michelle's only goal tonight.",
+      "He was to become a distinguished writer."
+    ],
+    "exceptions": [
+      "Avoid needless splitting where it muddies meaning, though a split infinitive is not an error in itself."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-PARTPH-001",
+    "title": "Participial phrase",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "phrases",
+      "modifiers"
+    ],
+    "principle": "A participial phrase begins with a present or past participle and works as an adjective, adding detail to a noun. It also makes an efficient time transition at the head of a sentence.",
+    "weak_examples": [
+      "Eaten by mosquitoes was the reason we wished we had booked a hotel."
+    ],
+    "strong_examples": [
+      "Eaten by mosquitoes, we wished we had booked a hotel.",
+      "Leaping out of bed, he ran to the window."
+    ],
+    "exceptions": [
+      "The participle must attach to the right noun, or it dangles (see dangling modifier)."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-ADJPH-001",
+    "title": "Adjectival phrase",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "phrases",
+      "modifiers"
+    ],
+    "principle": "An adjectival phrase qualifies a noun or pronoun, often set off by commas when it interrupts the main clause.",
+    "weak_examples": [
+      "The man was covered with sweat and trudged home."
+    ],
+    "strong_examples": [
+      "The man, covered with sweat, trudged home.",
+      "The headmaster, furiously angry, strode onto the platform."
+    ],
+    "exceptions": [
+      "Punctuate a non-restrictive phrase with commas; a restrictive one takes none."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-ADVPH-001",
+    "title": "Adverbial phrase",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "phrases"
+    ],
+    "principle": "An adverbial phrase answers how, when, why or where, modifying a verb, adjective or whole clause.",
+    "weak_examples": [
+      "Francis will arrive and it will be soon."
+    ],
+    "strong_examples": [
+      "Francis will arrive in a short time.",
+      "She spoke with great care."
+    ],
+    "exceptions": [
+      "Place it close to what it modifies to avoid ambiguity."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-NOUNPH-001",
+    "title": "Noun phrase",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "phrases"
+    ],
+    "principle": "A noun phrase is a head noun plus its modifiers, functioning as a subject, object or complement.",
+    "weak_examples": [
+      "Weakness in the economy now may result from prices of energy that are high."
+    ],
+    "strong_examples": [
+      "Current economic weakness may result from high energy prices.",
+      "The dark clouds overhead suggested rain."
+    ],
+    "exceptions": [
+      "Long noun phrases dense with modifiers slow the reader; unpack them into verbs where you can."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-GERPH-001",
+    "title": "Gerund phrase",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "phrases",
+      "verb-forms"
+    ],
+    "principle": "A gerund is an -ing verb used as a noun; a gerund phrase acts as a subject, object or complement.",
+    "weak_examples": [
+      "To swim every day helped him to recover."
+    ],
+    "strong_examples": [
+      "Swimming every day helped him recover.",
+      "Eating ice cream on a windy day is a messy business."
+    ],
+    "exceptions": [
+      "Do not confuse a gerund (noun) with a participle (adjective); the same -ing word can be either."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-PREP-001",
+    "title": "Preposition and prepositional phrase",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "phrases",
+      "prepositions"
+    ],
+    "principle": "A preposition shows the relation of a noun or pronoun to the rest of the sentence; a prepositional phrase runs from the preposition to its object and usually shows position or movement.",
+    "weak_examples": [
+      "She placed the book the table."
+    ],
+    "strong_examples": [
+      "She placed the book on the table.",
+      "Swarms of cloud moved across the sky, casting shadows over the desert."
+    ],
+    "exceptions": [
+      "Stacked prepositional phrases bloat a sentence; recast one as a verb or a possessive (see the preposition-stacking rule)."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-PHRVB-001",
+    "title": "Phrasal verb",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "verb-forms"
+    ],
+    "principle": "A phrasal verb is a verb plus a particle whose combined meaning differs from the verb alone.",
+    "weak_examples": [
+      "Please remove the papers from the desk before you depart the meeting."
+    ],
+    "strong_examples": [
+      "Please clear up the desk before you head off.",
+      "The plane took off on time."
+    ],
+    "exceptions": [
+      "Many phrasal verbs are informal; in formal prose a single Latinate verb (depart, remove) often reads better."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-CONJ-001",
+    "title": "Conjunctions: coordinating, subordinating, correlative",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "conjunctions",
+      "clauses"
+    ],
+    "principle": "Conjunctions join words, phrases and clauses. Coordinating conjunctions (FANBOYS: for, and, nor, but, or, yet, so) link equals; subordinating conjunctions (because, although, since, while) attach a dependent clause; correlative pairs (either...or, not only...but also) balance two elements.",
+    "weak_examples": [
+      "The sample was small, the results are provisional."
+    ],
+    "strong_examples": [
+      "The sample was small, so the results are provisional.",
+      "Not only was the sample small, but it was also unrepresentative."
+    ],
+    "exceptions": [
+      "If a sentence has more than one finite verb, check that a conjunction (or correct punctuation) joins the clauses (see comma splice)."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-CLTIME-001",
+    "title": "Adverbial clause of time",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "clauses",
+      "subordination"
+    ],
+    "principle": "A clause of time says when something happens, introduced by before, after, when, while, until, as soon as or since. When it precedes the main clause, mark the join with a comma; for future events, use a present tense in the time clause and a future in the main clause.",
+    "weak_examples": [
+      "After I will finish my work I will join you."
+    ],
+    "strong_examples": [
+      "After I have finished my work, I will join you.",
+      "As soon as the word got around, the queue formed."
+    ],
+    "exceptions": [
+      "No comma is needed when the time clause follows the main clause."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-CLPLACE-001",
+    "title": "Adverbial clause of place",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "clauses",
+      "subordination"
+    ],
+    "principle": "A clause of place says where, introduced by where or wherever.",
+    "weak_examples": [
+      "He was happy in the location that he currently occupied."
+    ],
+    "strong_examples": [
+      "He said he was happy where he was.",
+      "Wherever she went, the dog followed."
+    ],
+    "exceptions": [
+      "Do not confuse where (place) with when (time) or in which (relative)."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-CLREASON-001",
+    "title": "Adverbial clause of reason",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "clauses",
+      "subordination"
+    ],
+    "principle": "A clause of reason gives the why of the main clause, introduced by because, since, as or given that.",
+    "weak_examples": [
+      "I liked him a lot and I could not feel anger against him."
+    ],
+    "strong_examples": [
+      "I could not feel anger against him because I liked him too much.",
+      "Given that the data were incomplete, we paused the analysis."
+    ],
+    "exceptions": [
+      "Since and as can also mean time; make sure the reason reading is unambiguous."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-CLMANNER-001",
+    "title": "Adverbial clause of manner",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "clauses",
+      "subordination"
+    ],
+    "principle": "A clause of manner says how something is done, introduced by as, like or the way.",
+    "weak_examples": [
+      "I was never allowed to do things in my own preferred fashion."
+    ],
+    "strong_examples": [
+      "I was never allowed to do things as I wanted to do them.",
+      "She fixed it the way her father had shown her."
+    ],
+    "exceptions": [
+      "In formal writing prefer as to like when introducing a clause."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-CLCOMP-001",
+    "title": "Adverbial clause of comparison",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "clauses",
+      "subordination"
+    ],
+    "principle": "A clause of comparison makes an explicit comparison, often with as...as or than.",
+    "weak_examples": [
+      "Johan speaks English very well, similar to his teacher."
+    ],
+    "strong_examples": [
+      "Johan can speak English as fluently as his teacher.",
+      "The second trial ran faster than the first had."
+    ],
+    "exceptions": [
+      "Keep both sides of the comparison grammatically parallel."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-CLPURP-001",
+    "title": "Adverbial clause of purpose",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "clauses",
+      "subordination"
+    ],
+    "principle": "A clause of purpose states the aim of the main clause, introduced by so that, in order that or in order to.",
+    "weak_examples": [
+      "They took some land, extending the churchyard was the reason."
+    ],
+    "strong_examples": [
+      "They took some of the land so that they could extend the churchyard."
+    ],
+    "exceptions": [
+      "Do not confuse purpose (so that) with result (so...that)."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-CLRESULT-001",
+    "title": "Adverbial clause of result",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "clauses",
+      "subordination"
+    ],
+    "principle": "A clause of result shows what follows from the main clause, introduced by so...that or such...that.",
+    "weak_examples": [
+      "The suitcase was very damaged and the lid would not close."
+    ],
+    "strong_examples": [
+      "The suitcase had become so damaged that the lid would not stay closed."
+    ],
+    "exceptions": [
+      "The correlative so...that or such...that frames it; keep both halves."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-CLCOND-001",
+    "title": "Adverbial clause of condition and the subjunctive",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "clauses",
+      "subordination",
+      "verb-forms"
+    ],
+    "principle": "A clause of condition sets the terms under which something holds, introduced by if, unless or lest. For an unreal or hypothetical condition, use the subjunctive: were, not was, in the first and third person.",
+    "weak_examples": [
+      "If I was in charge, things would run differently."
+    ],
+    "strong_examples": [
+      "If they lose weight during an illness, they soon regain it.",
+      "If I were in charge, things would run differently."
+    ],
+    "exceptions": [
+      "The subjunctive is for conditions that cannot or may not be fulfilled, not for open real ones."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-RELCL-001",
+    "title": "Relative pronouns and adjectival clauses",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "clauses",
+      "modifiers"
+    ],
+    "principle": "A relative pronoun (who, whom, whose, which, that) links a subordinate clause to a noun in the main clause. The resulting adjectival, or relative, clause tells which one, what kind or how many, and cannot stand alone.",
+    "weak_examples": [
+      "Diane felt manipulated by her beagle. The beagle's eyes pleaded for a cookie."
+    ],
+    "strong_examples": [
+      "Diane felt manipulated by her beagle, whose eyes pleaded for another cookie.",
+      "The paper that won the prize was hers."
+    ],
+    "exceptions": [
+      "Use that for restrictive clauses and which, set off by commas, for non-restrictive ones; who for people."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-SENTTYPE-001",
+    "title": "Sentence types: simple, compound, complex, compound-complex",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "sentence-variety",
+      "clauses"
+    ],
+    "principle": "A simple sentence has one independent clause; a compound joins two with a coordinating conjunction or semicolon; a complex pairs an independent clause with one or more subordinate clauses; a compound-complex combines both. Knowing which you are writing lets you control weight and pace.",
+    "weak_examples": [
+      "He walked to the door. He opened it. He looked out. He saw rain."
+    ],
+    "strong_examples": [
+      "He walked to the door and opened it (compound), and because the rain had set in, he only stood and looked (compound-complex)."
+    ],
+    "exceptions": [
+      "No single type is best; the craft is in mixing them (see sentence variety)."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-VARIETY-001",
+    "title": "Vary your sentence structure",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "sentence-variety",
+      "rhythm"
+    ],
+    "principle": "Mix simple, compound and complex sentences, and vary how you use main and subordinate clauses. A run of same-shape sentences flattens rhythm; a short sentence after long ones lands like a beat.",
+    "weak_examples": [
+      "The results were strong. The team was pleased. The trial continued. The funding increased."
+    ],
+    "strong_examples": [
+      "The results were strong, and although the team stayed cautious, the trial continued and the funding grew. Then everything changed."
+    ],
+    "exceptions": [
+      "Deliberate monotony can enact tedium or dread; choose it, do not fall into it."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-PARALLEL-001",
+    "title": "Parallelism: match the grammatical form",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "parallelism",
+      "sentence-variety"
+    ],
+    "principle": "Items joined in a series or a comparison should share the same grammatical form. Parallel structure makes lists readable and gives rhetorical figures (tricolon, antithesis, chiasmus) their snap.",
+    "weak_examples": [
+      "She likes reading, to write, and she runs.",
+      "The role calls for someone organised, with reliability, and who is calm."
+    ],
+    "strong_examples": [
+      "She likes reading, writing and running.",
+      "The role calls for someone organised, reliable and calm.",
+      "Government of the people, by the people, for the people."
+    ],
+    "exceptions": [
+      "Faulty parallelism (mixing an infinitive with a gerund, a noun with a clause) is a common, jarring slip."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-DANGLE-001",
+    "title": "Dangling and misplaced modifiers",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "modifiers"
+    ],
+    "principle": "A modifier must sit next to the word it describes. A dangling modifier has nothing logical to attach to; a misplaced one attaches to the wrong word, often comically.",
+    "weak_examples": [
+      "Walking to the shop, the rain began to fall.",
+      "She served sandwiches to the children on paper plates."
+    ],
+    "strong_examples": [
+      "As I walked to the shop, the rain began to fall.",
+      "On paper plates, she served the children sandwiches."
+    ],
+    "exceptions": [
+      "Introductory participial phrases are the usual culprits; check that the subject of the main clause is the one performing the action."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-COMMASPLICE-001",
+    "title": "Comma splice and run-on",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "punctuation",
+      "clauses"
+    ],
+    "principle": "Two independent clauses cannot be joined by a comma alone (a comma splice) or by nothing at all (a run-on). Fix with a full stop, a semicolon, or a comma plus a coordinating conjunction.",
+    "weak_examples": [
+      "The sample was small, the results are provisional.",
+      "The sample was small the results are provisional."
+    ],
+    "strong_examples": [
+      "The sample was small. The results are provisional.",
+      "The sample was small; the results are provisional.",
+      "The sample was small, so the results are provisional."
+    ],
+    "exceptions": [
+      "A semicolon is right only between two independent clauses or in a complex list."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "GRAM-CLAUSE-001",
+    "title": "Independent and subordinate clauses",
+    "track": "both",
+    "skills": [
+      "grammar",
+      "clauses",
+      "subordination"
+    ],
+    "principle": "An independent clause contains a subject and finite verb and can stand alone. A subordinate (dependent) clause also has a subject and verb but is introduced by a subordinator and cannot stand alone; it must attach to a main clause.",
+    "weak_examples": [
+      "Because the rain had set in. We stayed indoors."
+    ],
+    "strong_examples": [
+      "Because the rain had set in, we stayed indoors.",
+      "We stayed indoors because the rain had set in."
+    ],
+    "exceptions": [
+      "A subordinate clause punctuated as a full sentence is a fragment; join it to its main clause."
+    ],
+    "source": {
+      "document": "Rhetoric and Grammar notes (compiled)",
+      "section": "Grammatical know-how"
+    }
+  },
+  {
+    "rule_id": "ACA-FUNC-COMP-001",
+    "title": "Comparing and contrasting",
+    "track": "academic",
+    "skills": [
+      "transitions",
+      "cohesion",
+      "comparison",
+      "contrast"
+    ],
+    "principle": "Use comparing and contrasting phrases to highlight similarities and differences between subjects. This analysis can precede evaluation.",
+    "weak_examples": [
+      "X is different to Y. They are similar in some ways."
+    ],
+    "strong_examples": [
+      "X is different from Y in a number of respects.",
+      "There are a number of important differences between X and Y.",
+      "X differs from Y in a number of important ways.",
+      "Women and men differ not only in physical attributes but also in the way in which they...",
+      "The mode of processing used by the right brain is comparable in complexity to that used by the left..."
+    ],
+    "exceptions": [
+      "Do not force a contrast where none exists."
+    ],
+    "source": {
+      "document": "Comparing and contrasting.docx",
+      "section": "Comparing and Contrasting"
+    }
+  },
+  {
+    "rule_id": "ACA-FUNC-CRIT-001",
+    "title": "Being critical",
+    "track": "academic",
+    "skills": [
+      "transitions",
+      "cohesion",
+      "criticality"
+    ],
+    "principle": "Being critical means questioning sources, identifying problems with arguments or methods, and not accepting claims merely because they are published.",
+    "weak_examples": [
+      "The author says this is true, so it must be."
+    ],
+    "strong_examples": [
+      "One major drawback of this approach is...",
+      "However, this argument fails to take into account...",
+      "The authors' claim that X causes Y is not supported by their data."
+    ],
+    "exceptions": [
+      "Do not be critical merely for the sake of it; criticism should be constructive."
+    ],
+    "source": {
+      "document": "Being critical.docx",
+      "section": "Being Critical"
+    }
+  },
+  {
+    "rule_id": "ACA-FUNC-CAUSE-001",
+    "title": "Describing cause and effect",
+    "track": "academic",
+    "skills": [
+      "transitions",
+      "cohesion",
+      "causation"
+    ],
+    "principle": "Academic work often involves analyzing problems by thoroughly understanding their causes and effects.",
+    "weak_examples": [
+      "X happened and then Y happened."
+    ],
+    "strong_examples": [
+      "X causes Y.",
+      "Y is a consequence of X.",
+      "The increase in X can be attributed to Y.",
+      "This resulted in a significant change in Z."
+    ],
+    "exceptions": [
+      "Avoid assuming correlation implies causation."
+    ],
+    "source": {
+      "document": "Describing causes and effects.docx",
+      "section": "Describing Causes and Effects"
+    }
+  },
+  {
+    "rule_id": "ACA-FUNC-EXAM-001",
+    "title": "Giving examples",
+    "track": "academic",
+    "skills": [
+      "transitions",
+      "cohesion",
+      "exemplification"
+    ],
+    "principle": "Specific examples serve as evidence to support general claims and help clarify complex or unfamiliar concepts.",
+    "weak_examples": [
+      "There are many issues, like this one."
+    ],
+    "strong_examples": [
+      "For example, the recent study by Smith (2020) illustrates...",
+      "This concept is exemplified in the work of Jones...",
+      "A notable example of this phenomenon is..."
+    ],
+    "exceptions": [
+      "Examples must be relevant and representative of the general claim."
+    ],
+    "source": {
+      "document": "Giving examples.docx",
+      "section": "Giving Examples"
+    }
+  },
+  {
+    "rule_id": "ACA-FUNC-DEF-001",
+    "title": "Defining terms",
+    "track": "academic",
+    "skills": [
+      "transitions",
+      "cohesion",
+      "defining"
+    ],
+    "principle": "Define key terms clearly to prevent misinterpretation and demonstrate understanding of complex concepts.",
+    "weak_examples": [
+      "A catalyst is something that helps a reaction."
+    ],
+    "strong_examples": [
+      "In this study, X is defined as...",
+      "The term Y refers to...",
+      "X can be loosely described as..."
+    ],
+    "exceptions": [
+      "Avoid overly complex definitions that obscure rather than clarify."
+    ],
+    "source": {
+      "document": "Defining terms.docx",
+      "section": "Writing Definitions"
+    }
+  },
+  {
+    "rule_id": "ACA-FUNC-TREND-001",
+    "title": "Describing trends",
+    "track": "academic",
+    "skills": [
+      "transitions",
+      "cohesion",
+      "describing-trends"
+    ],
+    "principle": "Use precise language to describe changes over time (trends) and predict future changes (projections).",
+    "weak_examples": [
+      "The numbers went up and down."
+    ],
+    "strong_examples": [
+      "The number of live births outside marriage reached a peak during the second world war.",
+      "The peak age for committing a crime is 18.",
+      "There was a sharp decline in the rate of inflation."
+    ],
+    "exceptions": [
+      "Ensure descriptions match the data precisely without exaggeration."
+    ],
+    "source": {
+      "document": "Describing trends.docx",
+      "section": "Describing Trends and Projections"
+    }
+  },
+  {
+    "rule_id": "ACA-FUNC-REP-001",
+    "title": "Reporting results",
+    "track": "academic",
+    "skills": [
+      "transitions",
+      "cohesion",
+      "reporting-results"
+    ],
+    "principle": "Present results clearly, often by identifying the relevant figure/table and highlighting the most significant data without elaborate discussion in the results section.",
+    "weak_examples": [
+      "The table shows our results."
+    ],
+    "strong_examples": [
+      "Table 1 shows the results obtained from...",
+      "As can be seen from Figure 2, there is a clear trend...",
+      "The data demonstrate that..."
+    ],
+    "exceptions": [
+      "Do not interpret the results extensively in the reporting section; save that for the discussion."
+    ],
+    "source": {
+      "document": "Reporting results.docx",
+      "section": "Reporting Results"
+    }
+  },
+  {
+    "rule_id": "ACA-FUNC-LIT-001",
+    "title": "Referring to the literature",
+    "track": "academic",
+    "skills": [
+      "transitions",
+      "cohesion",
+      "literature-review"
+    ],
+    "principle": "Acknowledge sources clearly within or alongside the text, using appropriate reporting verbs to integrate the literature into your argument.",
+    "weak_examples": [
+      "A book said this idea."
+    ],
+    "strong_examples": [
+      "Smith (2003) argues that...",
+      "Previous studies have shown that...",
+      "According to Jones (2010),..."
+    ],
+    "exceptions": [
+      "Ensure citations accurately reflect the original author's intent."
+    ],
+    "source": {
+      "document": "Referring to Literature.docx",
+      "section": "Referring to Literature"
+    }
+  },
+  {
+    "rule_id": "ACA-FUNC-HEDGE-001",
+    "title": "Hedging a claim",
+    "track": "academic",
+    "skills": [
+      "transitions",
+      "cohesion",
+      "hedging",
+      "discussing-findings"
+    ],
+    "principle": "Use hedging language when discussing findings to acknowledge limitations, indicate probability rather than certainty, and leave room for alternative explanations.",
+    "weak_examples": [
+      "This proves that our theory is completely correct."
+    ],
+    "strong_examples": [
+      "These findings suggest that...",
+      "It appears that X may influence Y...",
+      "This could indicate a potential relationship between..."
+    ],
+    "exceptions": [
+      "Do not hedge when stating established facts or definitive results."
+    ],
+    "source": {
+      "document": "Discussing findings.docx",
+      "section": "Discussions"
+    }
+  },
+  {
+    "rule_id": "ACA-TRANS-ADD-001",
+    "title": "Signalling addition",
+    "track": "academic",
+    "skills": [
+      "transitions",
+      "cohesion",
+      "addition"
+    ],
+    "principle": "Use addition transitions to add information, reinforce ideas, and express agreement with preceding material.",
+    "weak_examples": [
+      "The study was good. And it was cheap."
+    ],
+    "strong_examples": [
+      "In addition, the results show...",
+      "Furthermore, this approach provides...",
+      "Moreover, the data indicates...",
+      "Similarly, the second group..."
+    ],
+    "exceptions": [
+      "Avoid starting too many sentences with 'And' or 'Also' in formal prose."
+    ],
+    "source": {
+      "document": "Linking words1.docx",
+      "section": "Agreement / Addition / Similarity"
+    }
+  },
+  {
+    "rule_id": "ACA-TRANS-CONT-001",
+    "title": "Signalling contrast",
+    "track": "academic",
+    "skills": [
+      "transitions",
+      "cohesion",
+      "contrast"
+    ],
+    "principle": "Use contrast transitions to introduce opposing ideas, point out alternatives, or establish differences.",
+    "weak_examples": [
+      "The hypothesis was plausible. But it failed."
+    ],
+    "strong_examples": [
+      "However, the evidence suggests otherwise.",
+      "In contrast, the second model demonstrated...",
+      "Conversely, the control group exhibited...",
+      "On the other hand, earlier studies found..."
+    ],
+    "exceptions": [
+      "Ensure the contrast is logical and clear to the reader."
+    ],
+    "source": {
+      "document": "Linking words1.docx",
+      "section": "Opposition / Limitation / Contradiction"
+    }
+  },
+  {
+    "rule_id": "ACA-TRANS-CAUSE-001",
+    "title": "Signalling cause and result",
+    "track": "academic",
+    "skills": [
+      "transitions",
+      "cohesion",
+      "cause-and-result"
+    ],
+    "principle": "Use cause and result transitions to link conditions to their consequences and show logical progression.",
+    "weak_examples": [
+      "It rained. So we stopped."
+    ],
+    "strong_examples": [
+      "Consequently, the project was delayed.",
+      "As a result, the temperature increased.",
+      "Therefore, we conclude that...",
+      "Thus, the hypothesis is supported."
+    ],
+    "exceptions": [
+      "Avoid overusing 'so' in formal academic writing."
+    ],
+    "source": {
+      "document": "Linking words1.docx",
+      "section": "Cause / Condition / Purpose"
+    }
+  },
+  {
+    "rule_id": "ACA-TRANS-CONC-001",
+    "title": "Signalling concession",
+    "track": "academic",
+    "skills": [
+      "transitions",
+      "cohesion",
+      "concession"
+    ],
+    "principle": "Use concession transitions to acknowledge a point that might oppose your argument before asserting your own point.",
+    "weak_examples": [
+      "Even though it was hard we did it."
+    ],
+    "strong_examples": [
+      "Although the sample size was small, the results were statistically significant.",
+      "Despite these limitations, the findings suggest...",
+      "Nevertheless, the overall trend remains clear."
+    ],
+    "exceptions": [
+      "Ensure the concession does not completely undermine your main argument."
+    ],
+    "source": {
+      "document": "Linking words1.docx",
+      "section": "Opposition / Limitation / Contradiction"
+    }
+  },
+  {
+    "rule_id": "ACA-TRANS-SEQ-001",
+    "title": "Signalling sequence and time",
+    "track": "academic",
+    "skills": [
+      "transitions",
+      "cohesion",
+      "sequence-and-time"
+    ],
+    "principle": "Use sequence and time transitions to organize points chronologically or establish an order of events.",
+    "weak_examples": [
+      "First we did X. Next we did Y. Then Z happened."
+    ],
+    "strong_examples": [
+      "Initially, the sample was prepared.",
+      "Subsequently, the solution was heated.",
+      "Finally, the results were recorded.",
+      "In the meantime, the control group..."
+    ],
+    "exceptions": [
+      "Do not overuse simple sequencers (first, second, third) if logical connections are more appropriate."
+    ],
+    "source": {
+      "document": "Linking words1.docx",
+      "section": "Time / Chronology / Sequence"
+    }
+  },
+  {
+    "rule_id": "ACA-TRANS-SUMM-001",
+    "title": "Signalling summary and conclusion",
+    "track": "academic",
+    "skills": [
+      "transitions",
+      "cohesion",
+      "summary-and-conclusion"
+    ],
+    "principle": "Use summary transitions to draw points together, restate key ideas briefly, and signal the end of an argument.",
+    "weak_examples": [
+      "To finish up, the paper is about X."
+    ],
+    "strong_examples": [
+      "In summary, the evidence points to...",
+      "To conclude, this study demonstrates...",
+      "Overall, the findings indicate...",
+      "In brief, the proposed model..."
+    ],
+    "exceptions": [
+      "Avoid cliché conclusions like 'In conclusion' if the ending is already obvious from the structure."
+    ],
+    "source": {
+      "document": "Linking words1.docx",
+      "section": "Conclusion / Summary / Restatement"
+    }
+  },
+  {
+    "rule_id": "ACA-NOM-001",
+    "title": "Restore verbs hidden inside abstract nouns",
+    "track": "academic",
+    "skills": [
+      "nominalisation",
+      "sentence-economy",
+      "verb-strength"
+    ],
+    "principle": "Nominalisations turn actions into abstract nouns and often conceal who did what. Recovering the buried verb usually shortens the sentence and names the actor.",
+    "weak_examples": [
+      "The implementation of the policy was undertaken by the department."
+    ],
+    "strong_examples": [
+      "The department implemented the policy."
+    ],
+    "exceptions": [
+      "Keep the noun when the concept itself is the subject of study."
+    ],
+    "source": {
+      "document": "Style Guide",
+      "section": "Nominalisations"
+    }
+  },
+  {
+    "rule_id": "ACA-PRE-001",
+    "title": "Break stacked prepositional phrases",
+    "track": "academic",
+    "skills": [
+      "prepositions",
+      "sentence-economy"
+    ],
+    "principle": "Long chains of of/in/to/for phrases force the reader to hold too much in suspension. Recast one or two phrases as a verb or a possessive.",
+    "weak_examples": [
+      "The reduction in the level of engagement of students with the content of the module."
+    ],
+    "strong_examples": [
+      "Students engaged less with the module content."
+    ],
+    "exceptions": [
+      "Some prepositional chains are unavoidable in precise legal or technical description."
+    ],
+    "source": {
+      "document": "Style Guide",
+      "section": "Prepositions"
+    }
+  },
+  {
+    "rule_id": "ACA-PAS-001",
+    "title": "Prefer the active voice unless the actor is genuinely irrelevant",
+    "track": "academic",
+    "skills": [
+      "passive-voice",
+      "clarity"
+    ],
+    "principle": "The passive is not an error, but habitual passivity hides agency and adds words. Name the actor when the actor matters.",
+    "weak_examples": [
+      "Mistakes were made in the analysis."
+    ],
+    "strong_examples": [
+      "We made mistakes in the analysis."
+    ],
+    "exceptions": [
+      "Use the passive when the actor is unknown, obvious, or deliberately de-emphasised."
+    ],
+    "source": {
+      "document": "Style Guide",
+      "section": "Voice"
+    }
+  },
+  {
+    "rule_id": "ACA-TRN-001",
+    "title": "Use transitions to signal the logical move, not to decorate",
+    "track": "academic",
+    "skills": [
+      "transitions",
+      "cohesion"
+    ],
+    "principle": "A transition should name the relationship between ideas: contrast, cause, concession, addition, sequence. The wrong connective misleads the reader about your argument.",
+    "weak_examples": [
+      "The results were strong. However, we were pleased."
+    ],
+    "strong_examples": [
+      "The results were strong. Accordingly, we extended the trial."
+    ],
+    "exceptions": [],
+    "source": {
+      "document": "Style Guide",
+      "section": "Cohesion"
+    }
+  },
+  {
+    "rule_id": "LIT-IMG-001",
+    "title": "Prefer the concrete and specific over the abstract",
+    "track": "literary",
+    "skills": [
+      "concrete-description",
+      "imagery"
+    ],
+    "principle": "Abstractions tell; concrete, sensory detail shows. Replace a general noun with the particular thing the reader can see, hear or touch.",
+    "weak_examples": [
+      "The room conveyed a sense of neglect."
+    ],
+    "strong_examples": [
+      "Dust furred the piano keys; one lampshade hung at an angle."
+    ],
+    "exceptions": [
+      "Abstraction can be deliberate for distance or irony."
+    ],
+    "source": {
+      "document": "Craft Notes",
+      "section": "Concrete detail"
+    }
+  },
+  {
+    "rule_id": "LIT-RHY-001",
+    "title": "Vary sentence length for rhythm",
+    "track": "literary",
+    "skills": [
+      "rhythm",
+      "sentence-variation"
+    ],
+    "principle": "A run of same-length sentences flattens the music of prose. A short sentence after several long ones lands like a beat. Read aloud to hear it.",
+    "weak_examples": [
+      "He walked to the door. He opened the door. He looked outside. He saw the rain."
+    ],
+    "strong_examples": [
+      "He walked to the door and opened it, and for a moment he only looked at the grey street. Then the rain came."
+    ],
+    "exceptions": [
+      "Deliberate monotony can enact tedium or dread."
+    ],
+    "source": {
+      "document": "Craft Notes",
+      "section": "Rhythm"
+    }
+  },
+  {
+    "rule_id": "LIT-CLI-001",
+    "title": "Refresh or cut the cliche",
+    "track": "literary",
+    "skills": [
+      "freshness",
+      "imagery"
+    ],
+    "principle": "A cliche is an image the reader no longer sees. Replace it with something exact to your scene, or cut it.",
+    "weak_examples": [
+      "Her heart was in her throat as time stood still."
+    ],
+    "strong_examples": [
+      "She counted her own pulse in the silence and lost the number."
+    ],
+    "exceptions": [
+      "A character may speak in cliche to reveal character."
+    ],
+    "source": {
+      "document": "Craft Notes",
+      "section": "Cliche"
+    }
+  },
+  {
+    "rule_id": "BOTH-ADV-001",
+    "title": "Let the verb do the work before reaching for an adverb",
+    "track": "both",
+    "skills": [
+      "ad-words",
+      "verb-strength"
+    ],
+    "principle": "An -ly adverb propping up a weak verb is usually a sign a sharper verb exists. 'Ran quickly' is 'sprinted'; 'said angrily' is often just 'snapped'.",
+    "weak_examples": [
+      "She walked quietly and closed the door softly."
+    ],
+    "strong_examples": [
+      "She crept out and eased the door shut."
+    ],
+    "exceptions": [
+      "Keep the adverb when it genuinely changes the meaning of the verb."
+    ],
+    "source": {
+      "document": "Style Guide",
+      "section": "Modifiers"
+    }
+  },
+  {
+    "rule_id": "ACA-JAR-001",
+    "title": "Avoid unnecessary jargon",
+    "track": "academic",
+    "skills": [
+      "clarity",
+      "sentence-economy"
+    ],
+    "principle": "Jargon is useful when communicating with specialists, but excessive jargon obscures meaning. Use plain language when possible.",
+    "weak_examples": [
+      "We leveraged synergistic paradigms to optimize outcomes."
+    ],
+    "strong_examples": [
+      "We combined our approaches to improve results."
+    ],
+    "exceptions": [
+      "Use jargon when it is the accepted term of art in your field and your audience expects it."
+    ],
+    "source": {
+      "document": "Style Guide",
+      "section": "Clarity"
+    }
+  },
+  {
+    "rule_id": "LIT-SHO-001",
+    "title": "Show, don't tell",
+    "track": "literary",
+    "skills": [
+      "imagery",
+      "concrete-description"
+    ],
+    "principle": "Instead of telling the reader how a character feels or what a setting is like, show it through actions, sensory details, and dialogue.",
+    "weak_examples": [
+      "She was angry."
+    ],
+    "strong_examples": [
+      "She slammed the door and kicked the chair."
+    ],
+    "exceptions": [
+      "Telling is useful for summarizing time or transitioning between scenes."
+    ],
+    "source": {
+      "document": "Craft Notes",
+      "section": "Showing vs Telling"
+    }
+  },
+  {
+    "rule_id": "ACA-ADV-001",
+    "title": "Avoid piling up adverbs",
+    "track": "academic",
+    "skills": [
+      "ad-words",
+      "sentence-economy"
+    ],
+    "principle": "Too many adverbs can make prose sound cluttered. If a strong verb works better, use it.",
+    "weak_examples": [
+      "The data strongly and clearly showed that the hypothesis was totally correct."
+    ],
+    "strong_examples": [
+      "The data confirmed the hypothesis."
+    ],
+    "exceptions": [
+      "When an adverb is necessary for precision."
+    ],
+    "source": {
+      "document": "Style Guide",
+      "section": "Modifiers"
+    }
+  },
+  {
+    "rule_id": "BOTH-FREE-001",
+    "title": "Write freely to build momentum",
+    "track": "both",
+    "skills": [
+      "free-writing"
+    ],
+    "principle": "Free-writing is about sustaining momentum without stopping to edit or correct. It helps generate raw material and identify natural habits.",
+    "weak_examples": [
+      "Stopping every sentence to check the spelling."
+    ],
+    "strong_examples": [
+      "Writing continuously for five minutes, capturing whatever comes to mind."
+    ],
+    "exceptions": [
+      "Editing is necessary later, but not during the free-writing phase."
+    ],
+    "source": {
+      "document": "Craft Notes",
+      "section": "Free-writing"
+    }
+  },
+  {
+    "rule_id": "LIT-SENSE-001",
+    "title": "The telling detail: choose the specific over the general",
+    "track": "literary",
+    "skills": [
+      "concrete-description",
+      "imagery",
+      "restraint"
+    ],
+    "principle": "Pick one precise, observable detail that implies the whole, rather than naming the impression. A single exact object does more than a sentence of summary because the reader builds the picture themselves.",
+    "weak_examples": [
+      "The house felt abandoned and neglected."
+    ],
+    "strong_examples": [
+      "Dust furred the piano keys; one lampshade hung at an angle.",
+      "A single teacup, ringed brown, sat where she had left it."
+    ],
+    "exceptions": [
+      "A general statement can be right when you deliberately want distance or speed."
+    ],
+    "source": {
+      "document": "Literary craft notes (compiled)",
+      "section": "Prose craft"
+    }
+  },
+  {
+    "rule_id": "LIT-VOICE-001",
+    "title": "Establish a consistent voice and register",
+    "track": "literary",
+    "skills": [
+      "voice",
+      "diction"
+    ],
+    "principle": "Decide the personality and register of the narrating voice, then keep the diction consistent with it. A wry voice, a formal voice and a plain voice each choose different words for the same fact.",
+    "weak_examples": [
+      "The prof, whom one might describe as a distinguished pedagogue, was dead chuffed."
+    ],
+    "strong_examples": [
+      "He was, by any measure, a distinguished man, and he knew it.",
+      "The old man was pleased, and did not trouble to hide it."
+    ],
+    "exceptions": [
+      "A deliberate clash of register can be comic or ironic; choose it, do not stumble into it."
+    ],
+    "source": {
+      "document": "Literary craft notes (compiled)",
+      "section": "Prose craft"
+    }
+  },
+  {
+    "rule_id": "LIT-POV-001",
+    "title": "Use the prerogatives of third-person narration",
+    "track": "literary",
+    "skills": [
+      "point-of-view",
+      "voice"
+    ],
+    "principle": "A third-person narrator has powers a character lacks: omnipotence to drive the story and set the mood, ubiquity to appear anywhere, and clairvoyance to see where events are heading. The voice can tell more than any single character witnessed.",
+    "weak_examples": [
+      "He walked in. He did not know what would happen next. Neither did the reader."
+    ],
+    "strong_examples": [
+      "He walked in, easy and unsuspecting, though the letter that would undo him was already in the post."
+    ],
+    "exceptions": [
+      "Close third person trades some of this reach for intimacy; do not break the chosen distance by accident."
+    ],
+    "source": {
+      "document": "Literary craft notes (compiled)",
+      "section": "Prose craft"
+    }
+  },
+  {
+    "rule_id": "LIT-POV-002",
+    "title": "First person: filter the world through the narrator",
+    "track": "literary",
+    "skills": [
+      "point-of-view",
+      "voice"
+    ],
+    "principle": "In first person, everything the reader sees is coloured by the narrator's mood, bias and limits. Let their feeling tint the description rather than reporting the scene neutrally.",
+    "weak_examples": [
+      "I walked into the kitchen. Louise had made dinner. It was on the table."
+    ],
+    "strong_examples": [
+      "I walked into the kitchen and looked with a grimace at the questionable meal Louise had set before me."
+    ],
+    "exceptions": [
+      "An unreliable narrator is a feature, not a fault, so long as the reader can sense the gap."
+    ],
+    "source": {
+      "document": "Literary craft notes (compiled)",
+      "section": "Prose craft"
+    }
+  },
+  {
+    "rule_id": "LIT-MOOD-001",
+    "title": "Decide the atmosphere, then let diction serve it",
+    "track": "literary",
+    "skills": [
+      "mood",
+      "atmosphere",
+      "diction"
+    ],
+    "principle": "Before writing a scene, ask what atmosphere and mood you want to invoke, then choose words whose sound and connotation build it. The same room can be cosy or menacing depending on the diction.",
+    "weak_examples": [
+      "The kitchen was a normal kitchen at night."
+    ],
+    "strong_examples": [
+      "The kitchen held its breath in the dark, the tap counting seconds into the steel sink."
+    ],
+    "exceptions": [
+      "Resist naming the mood outright (do not write it felt ominous); build it and let the reader feel it."
+    ],
+    "source": {
+      "document": "Literary craft notes (compiled)",
+      "section": "Prose craft"
+    }
+  },
+  {
+    "rule_id": "LIT-METAPH-001",
+    "title": "Prefer fresh metaphor and simile; retire the dead ones",
+    "track": "literary",
+    "skills": [
+      "imagery",
+      "freshness"
+    ],
+    "principle": "A live metaphor makes the reader see; a dead one (heart in your throat, time stood still) they read straight past. Reach for a comparison exact to your scene, or cut the figure entirely.",
+    "weak_examples": [
+      "Her heart was in her throat as time stood still."
+    ],
+    "strong_examples": [
+      "She counted her own pulse in the silence and lost the number.",
+      "The morning was so cold the gatepost burned her bare hand."
+    ],
+    "exceptions": [
+      "A character may speak in cliche to reveal character; that is the character's voice, not yours."
+    ],
+    "source": {
+      "document": "Literary craft notes (compiled)",
+      "section": "Prose craft"
+    }
+  },
+  {
+    "rule_id": "LIT-VERB-001",
+    "title": "Let strong verbs carry the sentence",
+    "track": "literary",
+    "skills": [
+      "verb-strength",
+      "concision"
+    ],
+    "principle": "Energetic, concrete verbs do the work that a weak verb plus an adverb, or a form of to be, cannot. Ran quickly is sprinted; was walking slowly is trudged; made a decision is decided.",
+    "weak_examples": [
+      "She was walking slowly and made her way quietly to the door."
+    ],
+    "strong_examples": [
+      "She crept to the door and eased it shut.",
+      "He bolted across the yard."
+    ],
+    "exceptions": [
+      "Keep to be and plain verbs where plainness is the point; not every sentence wants a showy verb."
+    ],
+    "source": {
+      "document": "Literary craft notes (compiled)",
+      "section": "Prose craft"
+    }
+  },
+  {
+    "rule_id": "LIT-OPEN-001",
+    "title": "Open with a hook, not a throat-clear",
+    "track": "literary",
+    "skills": [
+      "openings",
+      "structure"
+    ],
+    "principle": "Earn the reader's attention in the first lines with an image, a question, a problem or an arresting statement. Save the real detonation for the inciting incident, but do not begin by clearing your throat.",
+    "weak_examples": [
+      "This is a story about a man and some things that happened to him over time."
+    ],
+    "strong_examples": [
+      "Somewhere along the way, things changed. Before it could end happily, everything changed."
+    ],
+    "exceptions": [
+      "A quiet opening can work if the quiet is charged; flatness is the enemy, not calm."
+    ],
+    "source": {
+      "document": "Literary craft notes (compiled)",
+      "section": "Prose craft"
+    }
+  },
+  {
+    "rule_id": "LIT-SURPRISE-001",
+    "title": "Enliven prose with a judicious surprising word",
+    "track": "literary",
+    "skills": [
+      "diction",
+      "freshness"
+    ],
+    "principle": "One well-placed unexpected word can electrify a sentence. Studies of writing quality find that a varied vocabulary and unusual words separate lively prose from mush. Insert them sparingly and deliberately.",
+    "weak_examples": [
+      "The dull lecture made everyone very bored and sleepy."
+    ],
+    "strong_examples": [
+      "The lecture rendered the whole room into a stupor.",
+      "The afternoon curdled into evening."
+    ],
+    "exceptions": [
+      "Avoid polysyllabic Latinisms for their own sake; the surprise should feel apt, not ostentatious."
+    ],
+    "source": {
+      "document": "Literary craft notes (compiled)",
+      "section": "Prose craft"
+    }
+  },
+  {
+    "rule_id": "LIT-RESTRAINT-001",
+    "title": "Trust the reader: cut the explaining",
+    "track": "literary",
+    "skills": [
+      "restraint",
+      "show-dont-tell"
+    ],
+    "principle": "Once you have shown something, do not turn round and explain it. Naming the emotion after dramatising it deflates the scene. Let the reader arrive at the meaning themselves.",
+    "weak_examples": [
+      "Dust furred every surface. The room had clearly been neglected for a very long time, which was sad."
+    ],
+    "strong_examples": [
+      "Dust furred every surface. A calendar on the wall still showed a year long gone."
+    ],
+    "exceptions": [
+      "A line of interpretation can land when it is earned and rare, not habitual."
+    ],
+    "source": {
+      "document": "Literary craft notes (compiled)",
+      "section": "Prose craft"
+    }
+  },
+  {
+    "rule_id": "LIT-PHIL-001",
+    "title": "Interweave the personal and the philosophical",
+    "track": "both",
+    "skills": [
+      "theme",
+      "essay-craft"
+    ],
+    "principle": "In reflective and literary nonfiction, thread a concrete personal thread through an abstract idea, using the story to help the reader feel the argument. The obsessions of philosophy are the obsessions of people trying to make sense of their lives.",
+    "weak_examples": [
+      "Identity is a complex philosophical problem with many competing theories."
+    ],
+    "strong_examples": [
+      "I did not know who I was in that kitchen, and it struck me that the question is older than philosophy and just as unfinished."
+    ],
+    "exceptions": [
+      "Keep the balance; pure abstraction loses the reader and pure anecdote loses the point."
+    ],
+    "source": {
+      "document": "Literary craft notes (compiled)",
+      "section": "Prose craft"
+    }
+  },
+  {
+    "rule_id": "LIT-THEME-001",
+    "title": "Let theme emerge from competing goods",
+    "track": "literary",
+    "skills": [
+      "theme",
+      "structure"
+    ],
+    "principle": "Theme is strongest when it dramatises a genuine tension between two values (loyalty against freedom, ambition against contentment) and makes the choice hard. Let the reader earn the conclusion over the course of the piece rather than stating it.",
+    "weak_examples": [
+      "The moral of the story is that family is more important than money."
+    ],
+    "strong_examples": [
+      "She could keep the shop or keep her son close, and the story never once pretended the choice was easy."
+    ],
+    "exceptions": [
+      "Avoid making the theme too obvious too early; trust the accumulation."
+    ],
+    "source": {
+      "document": "Literary craft notes (compiled)",
+      "section": "Prose craft"
+    }
+  },
+  {
+    "rule_id": "LIT-CUT-001",
+    "title": "Use surprising transitions like a cinematographer",
+    "track": "literary",
+    "skills": [
+      "rhythm",
+      "sentence-structure"
+    ],
+    "principle": "Deliberate transitions, the colon, the dash, the sudden cut, direct the reader's eye like camera angles and quick cuts. They enliven prose where a plodding here is another example would deaden it.",
+    "weak_examples": [
+      "Here is another example of the same idea, which follows on from the previous point."
+    ],
+    "strong_examples": [
+      "The plan was flawless. Then the phone rang.",
+      "She had one rule: never look back."
+    ],
+    "exceptions": [
+      "A surprise transition spends attention; overuse and every jolt stops landing."
+    ],
+    "source": {
+      "document": "Literary craft notes (compiled)",
+      "section": "Prose craft"
+    }
+  }
+]

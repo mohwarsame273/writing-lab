@@ -1,0 +1,888 @@
+[
+  {
+    "exercise_id": "aca-rewrite-nom-1",
+    "kind": "rewrite",
+    "mode": "academic",
+    "skill": "nominalisation",
+    "prompt": "Rewrite the sentence to restore the buried verb and name the actor.",
+    "seed_text": "An evaluation of the proposal was undertaken by the committee.",
+    "target": "Active sentence with a strong finite verb and a clear subject, e.g. 'The committee evaluated the proposal.'",
+    "hints": [
+      "This sentence hides an action inside an abstract noun.",
+      "Look at 'evaluation'. What verb is trapped inside it?",
+      "Make 'the committee' the subject and turn 'evaluation' into 'evaluated'.",
+      "The committee evaluated the proposal."
+    ],
+    "rule_ids": [
+      "ACA-NOM-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 1
+  },
+  {
+    "exercise_id": "aca-completion-active-1",
+    "kind": "sentence_completion",
+    "mode": "academic",
+    "skill": "clarity",
+    "prompt": "Complete the sentence using a concrete subject and an active verb.",
+    "seed_text": "When the data were cleaned, ______",
+    "target": "A clause with a named actor performing an active verb.",
+    "hints": [
+      "Avoid starting the second clause with 'it was'.",
+      "Name who or what acts next.",
+      "Try: 'the team re-ran the model'."
+    ],
+    "rule_ids": [
+      "ACA-PAS-001"
+    ],
+    "max_xp": 80,
+    "difficulty": 1
+  },
+  {
+    "exercise_id": "aca-select-actor-1",
+    "kind": "diagnostic_selection",
+    "mode": "academic",
+    "skill": "passive-voice",
+    "prompt": "Which sentence most clearly identifies the actor?",
+    "options": [
+      "It was decided that the deadline would be moved.",
+      "The board moved the deadline.",
+      "A decision regarding the movement of the deadline was reached."
+    ],
+    "answer_index": 1,
+    "target": "The option naming a subject that performs the verb.",
+    "hints": [
+      "Ask 'who did it?' of each option.",
+      "Two options hide the actor behind 'it was' or a nominalisation."
+    ],
+    "rule_ids": [
+      "ACA-PAS-001",
+      "ACA-NOM-001"
+    ],
+    "max_xp": 60,
+    "difficulty": 1
+  },
+  {
+    "exercise_id": "aca-transitions-1",
+    "kind": "transitions",
+    "mode": "academic",
+    "skill": "transitions",
+    "prompt": "Choose the connective that correctly signals the logical relationship.",
+    "seed_text": "The sample was small. ______ the findings should be treated as provisional.",
+    "options": [
+      "However,",
+      "Therefore,",
+      "For example,",
+      "Meanwhile,"
+    ],
+    "answer_index": 1,
+    "target": "A cause/consequence connective.",
+    "hints": [
+      "The second sentence is a consequence of the first.",
+      "You need a cause-and-effect signal, not a contrast."
+    ],
+    "rule_ids": [
+      "ACA-TRN-001"
+    ],
+    "max_xp": 50,
+    "difficulty": 1
+  },
+  {
+    "exercise_id": "aca-constrained-1",
+    "kind": "constrained_composition",
+    "mode": "academic",
+    "skill": "prepositions",
+    "prompt": "Write two sentences explaining the result. Use no more than one prepositional phrase in each sentence.",
+    "seed_text": "",
+    "target": "Two clear sentences, each with at most one prepositional phrase.",
+    "hints": [
+      "Count your of/in/to/for phrases as you write.",
+      "Turn a prepositional phrase into a verb or a possessive to cut it."
+    ],
+    "rule_ids": [
+      "ACA-PRE-001"
+    ],
+    "max_xp": 90,
+    "difficulty": 2
+  },
+  {
+    "exercise_id": "lit-rewrite-concrete-1",
+    "kind": "rewrite",
+    "mode": "literary",
+    "skill": "concrete-description",
+    "prompt": "Rewrite the abstract sentence using concrete, sensory detail.",
+    "seed_text": "The room conveyed a sense of neglect.",
+    "target": "A sentence that shows neglect through specific, observable detail rather than naming it.",
+    "hints": [
+      "Do not use the word 'neglect'. Show it.",
+      "What would you actually see, smell or hear in a neglected room?",
+      "Reach for one or two exact objects: dust, a cracked pane, a stopped clock."
+    ],
+    "rule_ids": [
+      "LIT-IMG-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 2
+  },
+  {
+    "exercise_id": "lit-completion-image-1",
+    "kind": "sentence_completion",
+    "mode": "literary",
+    "skill": "imagery",
+    "prompt": "Complete the sentence with a fresh, concrete image (avoid any cliche).",
+    "seed_text": "The morning was so cold that ______",
+    "target": "An original image conveying cold through specific detail.",
+    "hints": [
+      "Avoid 'freezing', 'bitter' and 'chilled to the bone'.",
+      "Anchor it in one physical thing that the cold changed."
+    ],
+    "rule_ids": [
+      "LIT-CLI-001",
+      "LIT-IMG-001"
+    ],
+    "max_xp": 90,
+    "difficulty": 2
+  },
+  {
+    "exercise_id": "lit-rewrite-rhythm-1",
+    "kind": "rewrite",
+    "mode": "literary",
+    "skill": "rhythm",
+    "prompt": "Rewrite the choppy passage so the sentence lengths vary and the rhythm improves.",
+    "seed_text": "He walked to the door. He opened the door. He looked outside. He saw the rain.",
+    "target": "A passage that varies sentence length and reads with rhythm, keeping the same events.",
+    "hints": [
+      "Combine some of the short clauses.",
+      "Keep one short sentence for impact at the end.",
+      "Try one long sentence of movement, then a two-word beat: 'Then rain.'"
+    ],
+    "rule_ids": [
+      "LIT-RHY-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 3
+  },
+  {
+    "exercise_id": "both-freewrite-1",
+    "kind": "free_write",
+    "mode": "both",
+    "skill": "free-writing",
+    "prompt": "Write freely for five minutes on any prompt you like, or describe the room you are in. On submission you will receive a diagnostic profile of your habits, not a score.",
+    "seed_text": "",
+    "target": "Sustained writing; the goal is momentum and a diagnostic mirror.",
+    "hints": [
+      "Do not stop to edit. Momentum first.",
+      "Aim for at least 120 words so the profile is meaningful."
+    ],
+    "rule_ids": [],
+    "max_xp": 120,
+    "difficulty": 1
+  },
+  {
+    "exercise_id": "aca-rewrite-jargon-1",
+    "kind": "rewrite",
+    "mode": "academic",
+    "skill": "clarity",
+    "prompt": "Rewrite the sentence to remove unnecessary jargon and use plain language.",
+    "seed_text": "The stakeholder engagement strategy facilitated a paradigm shift in our operational methodology.",
+    "target": "A clear sentence without corporate or academic jargon, e.g. 'Involving stakeholders changed how we work.'",
+    "hints": [
+      "Identify the jargon words like 'stakeholder engagement', 'facilitated', 'paradigm shift', 'operational methodology'.",
+      "Think about what these words actually mean in plain English."
+    ],
+    "rule_ids": [
+      "ACA-JAR-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 2
+  },
+  {
+    "exercise_id": "lit-rewrite-show-1",
+    "kind": "rewrite",
+    "mode": "literary",
+    "skill": "imagery",
+    "prompt": "Rewrite the sentence to show the emotion rather than telling it.",
+    "seed_text": "He was very nervous about the interview.",
+    "target": "A sentence that shows physical signs of nervousness.",
+    "hints": [
+      "What does a nervous person do with their hands, eyes, or body?",
+      "Try describing his sweat, his tapping foot, or how he practiced his answers in the mirror."
+    ],
+    "rule_ids": [
+      "LIT-SHO-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 2
+  },
+  {
+    "exercise_id": "aca-trans-diag-1",
+    "kind": "diagnostic_selection",
+    "mode": "academic",
+    "skill": "contrast",
+    "prompt": "Choose the connective that correctly signals the logical relationship between the sentences.",
+    "options": [
+      "Furthermore,",
+      "However,",
+      "Therefore,",
+      "Similarly,"
+    ],
+    "answer_index": 1,
+    "seed_text": "The initial hypothesis was highly plausible. ______, the experimental evidence suggests otherwise.",
+    "target": "A contrast connective indicating contradiction.",
+    "hints": [
+      "The second sentence contradicts the expectation set by the first.",
+      "You need a word that signals opposition or limitation."
+    ],
+    "rule_ids": [
+      "ACA-TRANS-CONT-001"
+    ],
+    "max_xp": 50,
+    "difficulty": 1
+  },
+  {
+    "exercise_id": "aca-trans-diag-2",
+    "kind": "transitions",
+    "mode": "academic",
+    "skill": "cause-and-result",
+    "prompt": "Choose the connective that correctly signals the logical relationship between the sentences.",
+    "options": [
+      "Consequently,",
+      "Nevertheless,",
+      "In addition,",
+      "For example,"
+    ],
+    "answer_index": 0,
+    "seed_text": "The temperature of the solution was unexpectedly increased. ______, the reaction proceeded at an accelerated rate.",
+    "target": "A cause-and-result connective.",
+    "hints": [
+      "The increased temperature caused the accelerated reaction.",
+      "Look for a word that means 'as a result'."
+    ],
+    "rule_ids": [
+      "ACA-TRANS-CAUSE-001"
+    ],
+    "max_xp": 50,
+    "difficulty": 2
+  },
+  {
+    "exercise_id": "aca-trans-comp-1",
+    "kind": "sentence_completion",
+    "mode": "academic",
+    "skill": "literature-review",
+    "prompt": "Complete the stem using a phrase that refers to the literature appropriately.",
+    "seed_text": "According to Smith (2003), ______",
+    "target": "A clause summarising a finding from the literature.",
+    "hints": [
+      "Follow the introductory phrase with a statement of fact or argument.",
+      "Example: 'According to Smith (2003), distinct differences exist between the two groups.'"
+    ],
+    "rule_ids": [
+      "ACA-FUNC-LIT-001"
+    ],
+    "max_xp": 80,
+    "difficulty": 1
+  },
+  {
+    "exercise_id": "aca-trans-comp-2",
+    "kind": "sentence_completion",
+    "mode": "academic",
+    "skill": "hedging",
+    "prompt": "Complete the stem using hedging language to discuss the finding.",
+    "seed_text": "These findings suggest that ______",
+    "target": "A cautious conclusion based on the findings.",
+    "hints": [
+      "Avoid words like 'proves' or 'definitely'.",
+      "Example: 'These findings suggest that X may influence Y under certain conditions.'"
+    ],
+    "rule_ids": [
+      "ACA-FUNC-HEDGE-001"
+    ],
+    "max_xp": 80,
+    "difficulty": 2
+  },
+  {
+    "exercise_id": "aca-trans-const-1",
+    "kind": "constrained_composition",
+    "mode": "academic",
+    "skill": "exemplification",
+    "prompt": "Write one or two sentences performing the function of giving an example. Use the phrase 'For example, the recent study by'.",
+    "seed_text": "",
+    "target": "A sentence correctly using the specified phrase to give an example.",
+    "hints": [
+      "Start by making a general claim.",
+      "Then use the phrase to introduce a specific study that supports the claim."
+    ],
+    "rule_ids": [
+      "ACA-FUNC-EXAM-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 3
+  },
+  {
+    "exercise_id": "aca-trans-const-2",
+    "kind": "constrained_composition",
+    "mode": "academic",
+    "skill": "concession",
+    "prompt": "Write one or two sentences using a concession transition. Use the word 'Although' at the beginning of the first sentence.",
+    "seed_text": "",
+    "target": "A sentence that acknowledges a limitation before asserting a main point.",
+    "hints": [
+      "Start with 'Although' followed by a limitation or opposing point.",
+      "Follow the comma with your main, stronger point."
+    ],
+    "rule_ids": [
+      "ACA-TRANS-CONC-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 3
+  },
+  {
+    "exercise_id": "lit-rewrite-detail-1",
+    "kind": "rewrite",
+    "mode": "literary",
+    "skill": "concrete-description",
+    "prompt": "Rewrite the abstract sentence so a single concrete detail carries the neglect.",
+    "seed_text": "The house felt abandoned and neglected.",
+    "target": "One or two precise, observable details that imply neglect without naming it.",
+    "hints": [
+      "Do not use the words neglect or abandoned.",
+      "What one object would show it: dust, a stopped clock, a dead plant?",
+      "Try: Dust furred the piano keys, and one lampshade hung askew."
+    ],
+    "rule_ids": [
+      "LIT-SENSE-001",
+      "LIT-IMG-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 2
+  },
+  {
+    "exercise_id": "lit-rewrite-show-fear-1",
+    "kind": "rewrite",
+    "mode": "literary",
+    "skill": "show-dont-tell",
+    "prompt": "Rewrite so the reader feels the nervousness through action or sensation, without naming it.",
+    "seed_text": "She was very nervous while she waited.",
+    "target": "The emotion shown through body, gesture or detail, not stated.",
+    "hints": [
+      "Delete the word nervous.",
+      "What do nervous hands or breath actually do?",
+      "Try: She turned the ring on her finger, again, and did not sit down."
+    ],
+    "rule_ids": [
+      "LIT-RESTRAINT-001",
+      "LIT-SHO-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 2
+  },
+  {
+    "exercise_id": "lit-complete-simile-1",
+    "kind": "sentence_completion",
+    "mode": "literary",
+    "skill": "imagery",
+    "prompt": "Complete the sentence with a fresh simile, avoiding any cliche.",
+    "seed_text": "The silence in the room was so complete that",
+    "target": "An original comparison that is exact to the scene.",
+    "hints": [
+      "Avoid deafening, could hear a pin drop, and heavy.",
+      "Anchor it to one physical thing the silence changed."
+    ],
+    "rule_ids": [
+      "LIT-METAPH-001",
+      "LIT-CLI-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 2
+  },
+  {
+    "exercise_id": "lit-rewrite-verb-1",
+    "kind": "rewrite",
+    "mode": "literary",
+    "skill": "verb-strength",
+    "prompt": "Rewrite using strong, concrete verbs. Remove the weak verb plus adverb pairings.",
+    "seed_text": "He was walking slowly and made his way quietly to the door.",
+    "target": "A sentence driven by energetic verbs, with no be plus adverb crutches.",
+    "hints": [
+      "Find the weak verb and adverb pairs: was walking slowly, made his way quietly.",
+      "One sharp verb can replace each pair.",
+      "Try: He trudged to the door and eased it shut."
+    ],
+    "rule_ids": [
+      "LIT-VERB-001",
+      "BOTH-ADV-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 2
+  },
+  {
+    "exercise_id": "lit-select-show-1",
+    "kind": "diagnostic_selection",
+    "mode": "literary",
+    "skill": "show-dont-tell",
+    "prompt": "Which sentence shows rather than tells?",
+    "seed_text": "",
+    "target": "The option that dramatises the feeling through detail.",
+    "hints": [
+      "Ask which one you can actually see.",
+      "Two of these name the emotion instead of enacting it."
+    ],
+    "rule_ids": [
+      "LIT-SHO-001",
+      "LIT-RESTRAINT-001"
+    ],
+    "max_xp": 60,
+    "difficulty": 1,
+    "options": [
+      "He was furious.",
+      "He set the cup down so hard the coffee jumped the rim.",
+      "He felt a great deal of anger inside himself."
+    ],
+    "answer_index": 1
+  },
+  {
+    "exercise_id": "lit-select-rhythm-1",
+    "kind": "diagnostic_selection",
+    "mode": "literary",
+    "skill": "rhythm",
+    "prompt": "Which version reads with the better rhythm?",
+    "seed_text": "",
+    "target": "The option that varies sentence length instead of repeating one shape.",
+    "hints": [
+      "Read each aloud in your head.",
+      "A short sentence after longer ones lands like a beat."
+    ],
+    "rule_ids": [
+      "LIT-RHY-001"
+    ],
+    "max_xp": 70,
+    "difficulty": 2,
+    "options": [
+      "He walked to the door. He opened the door. He looked outside. He saw the rain.",
+      "He walked to the door and opened it, and for a moment he only looked at the grey street. Then the rain came.",
+      "He walked to the door and opened the door and looked outside and saw that it was raining."
+    ],
+    "answer_index": 1
+  },
+  {
+    "exercise_id": "lit-compose-mood-1",
+    "kind": "constrained_composition",
+    "mode": "literary",
+    "skill": "mood",
+    "prompt": "Write two sentences that make an ordinary kitchen feel uneasy, without naming fear or dread.",
+    "seed_text": "",
+    "target": "Two sentences that build atmosphere through diction and detail, never naming the mood.",
+    "hints": [
+      "Choose words whose sound and connotation carry the unease.",
+      "Do not write it felt ominous; show the ordinary turning strange."
+    ],
+    "rule_ids": [
+      "LIT-MOOD-001",
+      "LIT-SENSE-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 3
+  },
+  {
+    "exercise_id": "lit-rewrite-pov-1",
+    "kind": "rewrite",
+    "mode": "literary",
+    "skill": "point-of-view",
+    "prompt": "Rewrite using the clairvoyance of a third-person narrator: hint at what the character does not yet know.",
+    "seed_text": "He walked into the room. He had no idea what was coming.",
+    "target": "A sentence that keeps the character's ignorance but lets the narrator see ahead.",
+    "hints": [
+      "The narrator can know more than the character.",
+      "Add the thing waiting in the wings.",
+      "Try: He walked in easy and unsuspecting, though the letter that would undo him was already written."
+    ],
+    "rule_ids": [
+      "LIT-POV-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 3
+  },
+  {
+    "exercise_id": "lit-complete-surprise-1",
+    "kind": "sentence_completion",
+    "mode": "literary",
+    "skill": "diction",
+    "prompt": "Complete the sentence with a single surprising but apt verb.",
+    "seed_text": "The long, grey lecture slowly",
+    "target": "One unexpected verb that electrifies the sentence.",
+    "hints": [
+      "Avoid the obvious made or turned.",
+      "Reach for a verb that carries the whole effect: curdled, rendered, drained."
+    ],
+    "rule_ids": [
+      "LIT-SURPRISE-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 2
+  },
+  {
+    "exercise_id": "lit-compose-open-1",
+    "kind": "constrained_composition",
+    "mode": "literary",
+    "skill": "openings",
+    "prompt": "Write an opening line that hooks the reader with an image, a question, or an arresting statement.",
+    "seed_text": "",
+    "target": "A single line that earns attention without clearing its throat.",
+    "hints": [
+      "Do not begin with this is a story about.",
+      "Lead with the concrete or the unexpected."
+    ],
+    "rule_ids": [
+      "LIT-OPEN-001"
+    ],
+    "max_xp": 80,
+    "difficulty": 2
+  },
+  {
+    "exercise_id": "lit-rewrite-cliche-1",
+    "kind": "rewrite",
+    "mode": "literary",
+    "skill": "freshness",
+    "prompt": "Rewrite the cliched sentence with something exact to the moment.",
+    "seed_text": "Her heart was in her throat as time stood still.",
+    "target": "A fresh image that replaces the dead figures of speech.",
+    "hints": [
+      "Both figures here are worn: heart in the throat, time stood still.",
+      "What would this character actually notice in that frozen second?"
+    ],
+    "rule_ids": [
+      "LIT-CLI-001",
+      "LIT-METAPH-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 3
+  },
+  {
+    "exercise_id": "lit-compose-detail-1",
+    "kind": "constrained_composition",
+    "mode": "literary",
+    "skill": "concrete-description",
+    "prompt": "Convey that a man lives alone and lonely using one object in his flat, and no abstract words.",
+    "seed_text": "",
+    "target": "A sentence or two where a single object implies the loneliness.",
+    "hints": [
+      "Do not use lonely or alone.",
+      "Pick the one object that says it: a single plate, a made bed, a silent phone."
+    ],
+    "rule_ids": [
+      "LIT-SENSE-001",
+      "LIT-RESTRAINT-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 3
+  },
+  {
+    "exercise_id": "lit-revise-paragraph-1",
+    "kind": "paragraph_revision",
+    "mode": "literary",
+    "skill": "rhythm",
+    "prompt": "Revise this flat paragraph so the sentence lengths vary and one detail turns concrete.",
+    "seed_text": "The evening was quiet. She sat in the chair. She was tired. The room was dark. She thought about the day.",
+    "target": "A paragraph with varied rhythm and at least one specific sensory detail.",
+    "hints": [
+      "Combine two of the short sentences.",
+      "Swap one general statement for a concrete image.",
+      "End on a short sentence for impact."
+    ],
+    "rule_ids": [
+      "LIT-RHY-001",
+      "LIT-SENSE-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 3
+  },
+  {
+    "exercise_id": "lit-freewrite-place-1",
+    "kind": "free_write",
+    "mode": "literary",
+    "skill": "free-writing",
+    "prompt": "Describe a place you know well at a particular time of day. Use at least two concrete sensory details and one fresh image. Write freely; you will get a habits profile, not a score.",
+    "seed_text": "",
+    "target": "Sustained, specific writing that practises concrete detail and fresh imagery.",
+    "hints": [
+      "Do not stop to edit; momentum first.",
+      "Name what you can see, hear or smell, not how the place made you feel."
+    ],
+    "rule_ids": [
+      "LIT-SENSE-001",
+      "LIT-METAPH-001"
+    ],
+    "max_xp": 120,
+    "difficulty": 1
+  },
+  {
+    "exercise_id": "lit2-complete-cold-1",
+    "kind": "sentence_completion",
+    "mode": "literary",
+    "skill": "imagery",
+    "prompt": "Complete the sentence with a fresh, concrete image for cold. Avoid every cliche.",
+    "seed_text": "The wind off the sea was so cold that",
+    "target": "An original image that conveys cold through one specific physical detail.",
+    "hints": [
+      "Avoid freezing, bitter, and chilled to the bone.",
+      "Anchor it to one object the cold changed.",
+      "Think surfaces: metal, glass, skin, breath.",
+      "For example: the gatepost burned her bare palm like a hot iron."
+    ],
+    "rule_ids": [
+      "LIT-CLI-001",
+      "LIT-METAPH-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 2
+  },
+  {
+    "exercise_id": "lit2-complete-neglect-1",
+    "kind": "sentence_completion",
+    "mode": "literary",
+    "skill": "concrete-description",
+    "prompt": "Finish the sentence by showing, through one concrete detail, that no one has lived here for years.",
+    "seed_text": "You could tell at once that no one had lived there for years:",
+    "target": "A single observable detail that implies long neglect without naming it.",
+    "hints": [
+      "Do not use the words neglect, empty or abandoned.",
+      "Name one object and what time has done to it.",
+      "Dust, damp, a stopped clock, a calendar frozen on an old year.",
+      "For example: a calendar on the wall still showed a year long gone."
+    ],
+    "rule_ids": [
+      "LIT-SENSE-001",
+      "LIT-SHO-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 2
+  },
+  {
+    "exercise_id": "lit2-complete-verb-1",
+    "kind": "sentence_completion",
+    "mode": "literary",
+    "skill": "verb-strength",
+    "prompt": "Complete the sentence with a single strong verb in place of entered. Make the verb carry the mood.",
+    "seed_text": "Instead of simply entering, she",
+    "target": "One vivid, concrete verb that replaces a bland one and sets a tone.",
+    "hints": [
+      "Avoid walked, went and came.",
+      "Let the verb tell us how she felt: swept, crept, burst, drifted.",
+      "One verb should do the work of a verb plus an adverb."
+    ],
+    "rule_ids": [
+      "LIT-VERB-001"
+    ],
+    "max_xp": 80,
+    "difficulty": 1
+  },
+  {
+    "exercise_id": "lit2-complete-mood-1",
+    "kind": "sentence_completion",
+    "mode": "literary",
+    "skill": "mood",
+    "prompt": "Complete the sentence so the midnight corridor feels uneasy, without naming fear or dread.",
+    "seed_text": "The corridor at midnight",
+    "target": "A completion that builds unease through diction and detail, never stating the mood.",
+    "hints": [
+      "Do not write it felt ominous or scary.",
+      "Choose words whose sound and connotation carry the unease.",
+      "Let an ordinary thing behave slightly wrong."
+    ],
+    "rule_ids": [
+      "LIT-MOOD-001",
+      "LIT-SENSE-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 3
+  },
+  {
+    "exercise_id": "lit2-complete-surprise-1",
+    "kind": "sentence_completion",
+    "mode": "literary",
+    "skill": "diction",
+    "prompt": "Complete the sentence with one surprising but apt verb that electrifies it.",
+    "seed_text": "One look from the old man",
+    "target": "A single unexpected verb, used deliberately, that lifts the sentence.",
+    "hints": [
+      "Avoid the obvious filled or covered.",
+      "Reach for a verb that carries the whole effect: silenced, curdled, drowned.",
+      "The surprise should feel exact, not showy."
+    ],
+    "rule_ids": [
+      "LIT-SURPRISE-001"
+    ],
+    "max_xp": 100,
+    "difficulty": 2
+  },
+  {
+    "exercise_id": "lit2-complete-smell-1",
+    "kind": "sentence_completion",
+    "mode": "literary",
+    "skill": "imagery",
+    "prompt": "Complete the sentence with two concrete, specific smells that place the reader in the market.",
+    "seed_text": "The morning market smelled of",
+    "target": "Precise sensory detail rather than a general impression.",
+    "hints": [
+      "Avoid nice, strong or interesting.",
+      "Name actual things: diesel, ripe fruit, wet cardboard, frying onions.",
+      "Two exact smells beat a paragraph of description."
+    ],
+    "rule_ids": [
+      "LIT-IMG-001",
+      "LIT-SENSE-001"
+    ],
+    "max_xp": 80,
+    "difficulty": 1
+  },
+  {
+    "exercise_id": "lit2-select-show-1",
+    "kind": "diagnostic_selection",
+    "mode": "literary",
+    "skill": "show-dont-tell",
+    "prompt": "Which sentence shows the character's grief rather than telling us about it?",
+    "seed_text": "",
+    "target": "The option that dramatises grief through action or detail.",
+    "hints": [
+      "Ask which one you can actually see happening.",
+      "Two of these simply name the emotion."
+    ],
+    "rule_ids": [
+      "LIT-SHO-001",
+      "LIT-RESTRAINT-001"
+    ],
+    "max_xp": 60,
+    "difficulty": 1,
+    "options": [
+      "She was overwhelmed with grief.",
+      "She kept setting two cups on the tray, then putting one back.",
+      "She felt an enormous, crushing sadness inside."
+    ],
+    "answer_index": 1
+  },
+  {
+    "exercise_id": "lit2-select-fresh-1",
+    "kind": "diagnostic_selection",
+    "mode": "literary",
+    "skill": "freshness",
+    "prompt": "Which sentence uses the freshest image, free of cliche?",
+    "seed_text": "",
+    "target": "The option that avoids worn figures of speech.",
+    "hints": [
+      "Two of these are images you have read a hundred times.",
+      "Fresh means exact to this moment, not borrowed."
+    ],
+    "rule_ids": [
+      "LIT-CLI-001",
+      "LIT-METAPH-001"
+    ],
+    "max_xp": 70,
+    "difficulty": 2,
+    "options": [
+      "Her heart was in her throat and time stood still.",
+      "She counted her own pulse in the silence and lost the number.",
+      "She was as white as a sheet and frozen like a statue."
+    ],
+    "answer_index": 1
+  },
+  {
+    "exercise_id": "lit2-select-verb-1",
+    "kind": "diagnostic_selection",
+    "mode": "literary",
+    "skill": "verb-strength",
+    "prompt": "Which sentence carries its meaning with the strongest verb?",
+    "seed_text": "",
+    "target": "The option whose verb does the work without propping adverbs.",
+    "hints": [
+      "Look for the verb that needs no adverb.",
+      "Two of these lean on a weak verb plus a modifier."
+    ],
+    "rule_ids": [
+      "LIT-VERB-001",
+      "BOTH-ADV-001"
+    ],
+    "max_xp": 70,
+    "difficulty": 2,
+    "options": [
+      "He walked quickly and quietly out of the room.",
+      "He slipped out of the room.",
+      "He made his way out of the room in a hurried manner."
+    ],
+    "answer_index": 1
+  },
+  {
+    "exercise_id": "lit2-select-open-1",
+    "kind": "diagnostic_selection",
+    "mode": "literary",
+    "skill": "openings",
+    "prompt": "Which opening line hooks the reader best?",
+    "seed_text": "",
+    "target": "The option that leads with the concrete or the arresting, not a throat-clear.",
+    "hints": [
+      "Which one makes you want the next sentence?",
+      "One of these merely announces that a story is coming."
+    ],
+    "rule_ids": [
+      "LIT-OPEN-001"
+    ],
+    "max_xp": 60,
+    "difficulty": 2,
+    "options": [
+      "This is a story about a man and the choices he made over many years.",
+      "Somewhere along the way, before it could end happily, everything changed.",
+      "In this piece I will describe some events from my childhood."
+    ],
+    "answer_index": 1
+  },
+  {
+    "exercise_id": "lit2-select-concrete-1",
+    "kind": "diagnostic_selection",
+    "mode": "literary",
+    "skill": "concrete-description",
+    "prompt": "Which sentence relies on concrete detail rather than abstraction?",
+    "seed_text": "",
+    "target": "The option that shows the particular thing rather than naming the quality.",
+    "hints": [
+      "Which one can you picture exactly?",
+      "Two of these name a quality instead of showing it."
+    ],
+    "rule_ids": [
+      "LIT-SENSE-001",
+      "LIT-IMG-001"
+    ],
+    "max_xp": 60,
+    "difficulty": 1,
+    "options": [
+      "The room conveyed a sense of faded grandeur.",
+      "Gilt peeled from the mirror frame, and the chandelier wore a grey coat of dust.",
+      "There was an atmosphere of former elegance about the place."
+    ],
+    "answer_index": 1
+  },
+  {
+    "exercise_id": "lit2-transition-cut-1",
+    "kind": "transitions",
+    "mode": "literary",
+    "skill": "rhythm",
+    "prompt": "Choose the transition that gives the sharpest cinematic cut between the two sentences.",
+    "seed_text": "The plan was flawless. ______ the phone rang.",
+    "target": "A crisp transition that lands like a quick cut, not a plodding connector.",
+    "hints": [
+      "The plan is calm; the phone shatters it.",
+      "A short, blunt transition cuts harder than a long linking phrase."
+    ],
+    "rule_ids": [
+      "LIT-CUT-001",
+      "LIT-RHY-001"
+    ],
+    "max_xp": 60,
+    "difficulty": 2,
+    "options": [
+      "Subsequently,",
+      "Then",
+      "In addition to this,",
+      "Following on from that,"
+    ],
+    "answer_index": 1
+  }
+]

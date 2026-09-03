@@ -1,0 +1,47 @@
+# Writing Lab: pinned dependencies
+# Verified against reflex 0.9.7's own constraints on 3 September 2026.
+# Every version below satisfies what reflex[db]==0.9.7 requires.
+ 
+# --- Framework -------------------------------------------------------------
+# Pinned: Reflex is pre-1.0 and the API moves between minor releases.
+# The [db] extra is required. It is what supplies sqlmodel, alembic and
+# pydantic. Plain `reflex` does not install them.
+# reflex-hosting-cli comes in as a transitive dependency, so `reflex deploy`
+# works without adding anything else.
+reflex[db]==0.9.7
+ 
+# --- Database --------------------------------------------------------------
+# Pinned explicitly for reproducible builds, even though reflex[db] pulls them.
+# reflex 0.9.7 constraints: sqlmodel<0.1,>=0.0.24  alembic<2.0,>=1.15.2
+sqlmodel==0.0.42
+alembic==1.19.1
+ 
+# Postgres driver. This was missing and would have failed the deploy.
+# psycopg2-binary works with plain postgresql:// connection strings and ships
+# prebuilt wheels, so no compiler is needed on the build machine.
+# Do not swap in psycopg 3 without also changing your connection string to
+# postgresql+psycopg://
+psycopg2-binary==2.9.12
+ 
+# Pulled in by sqlmodel; pinned so a future sqlalchemy 2.1 cannot break the build.
+# sqlmodel 0.0.42 requires SQLAlchemy<2.1.0,>=2.0.14
+SQLAlchemy==2.0.52
+ 
+# Required by reflex[db] at >=2.12.0
+pydantic==2.13.5
+ 
+# --- LLM providers ---------------------------------------------------------
+google-genai==2.22.0
+openai==3.7.0
+ 
+# --- Utilities -------------------------------------------------------------
+# numpy 2.4.6 is the newest release that still supports Python 3.11.
+# numpy 2.5.x requires Python >=3.12. 2.4.6 runs on 3.11 and 3.12+, so it is
+# the safe pin unless you have confirmed the build image is 3.12 or later.
+numpy==2.4.6
+ 
+python-dotenv==1.2.3
+ 
+# Makes Python trust the OS certificate store. Needed on the BPP network and
+# behind TLS-inspecting antivirus. Harmless in production.
+truststore==0.10.4
