@@ -18,7 +18,7 @@ _GEN_SYSTEM = (
 def generate_exercise(mode: Mode, skill: str) -> tuple[Optional[Exercise], Optional[str]]:
     from services.llm_grader import is_configured
     if not is_configured() or not os.getenv("GOOGLE_API_KEY"):
-        return None, None
+        return None, "AI service not configured (missing GOOGLE_API_KEY)."
         
     from google import genai
     from google.genai import types

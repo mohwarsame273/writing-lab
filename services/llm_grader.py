@@ -70,7 +70,7 @@ def grade(
     """Return constrained JSON, or None if no provider is configured or the call
     fails (the caller then uses the deterministic grade)."""
     if not is_configured():
-        return None, None
+        return None, "AI service not configured (missing API keys)."
 
     prompt = _build_prompt(submission, exercise, mode, principles or [])
 
@@ -141,7 +141,7 @@ def _parse(raw: str) -> Optional[dict]:
 def free_write_note(text: str) -> tuple[str, Optional[str]]:
     """Generate a short coaching note for a free-writing session."""
     if not is_configured() or not os.getenv("GOOGLE_API_KEY"):
-        return "", None
+        return "", "AI service not configured (missing GOOGLE_API_KEY)."
         
     from google import genai
     from google.genai import types
