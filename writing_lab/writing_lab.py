@@ -19,6 +19,7 @@ except ImportError:
 import reflex as rx
 
 from writing_lab import theme as t
+from services.progress_service import AttemptRecord
 from writing_lab.pages.dashboard import dashboard
 from writing_lab.pages.practice import practice
 from writing_lab.pages.free_write import free_write
@@ -33,6 +34,6 @@ app = rx.App(
 )
 
 # Load the first exercise when the practice page is opened.
-app.add_page(dashboard, route="/", title="Writing Lab")
-app.add_page(practice, route="/practice", title="Practice · Writing Lab", on_load=LabState.load_next)
-app.add_page(free_write, route="/free-write", title="Free write · Writing Lab")
+app.add_page(dashboard, route="/", title="Writing Lab", on_load=LabState.on_load)
+app.add_page(practice, route="/practice", title="Practice · Writing Lab", on_load=[LabState.on_load, LabState.load_next])
+app.add_page(free_write, route="/free-write", title="Free write · Writing Lab", on_load=LabState.on_load)

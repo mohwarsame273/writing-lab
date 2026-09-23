@@ -95,6 +95,28 @@ def next_exercise(
         unseen.sort(key=lambda e: e.difficulty)
         return unseen[0]
 
-    # everything seen: cycle back to the easiest for review
-    pool.sort(key=lambda e: e.difficulty)
-    return pool[0]
+    return None
+
+def pick_focused_exercise(
+    pool: list[Exercise],
+    selected_skill: str,
+    completed_ids: set[str],
+) -> Exercise | None:
+    if selected_skill:
+        pool = [e for e in pool if e.skill == selected_skill]
+        
+    if not pool:
+        return None
+        
+    unseen = [e for e in pool if e.exercise_id not in completed_ids]
+    if unseen:
+        unseen.sort(key=lambda e: e.difficulty)
+        return unseen[0]
+        
+    return None
+
+def calculate_progress_pct(pool: list[Exercise], completed_ids: set[str]) -> int:
+    static_ids = frozenset(e.exercise_id for e in pool)
+    valid_completed = len([x for x in completed_ids if x in static_ids])
+    total = len(static_ids) or 1
+    return int(round(100 * valid_completed / total))

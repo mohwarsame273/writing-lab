@@ -42,13 +42,6 @@ _PRINCIPLES = load_principles()
 
 _SELECTION_KINDS = {"diagnostic_selection", "transitions"}
 
-_SEED_MASTERY = [
-    {"skill": "nominalisation", "mastery": 0.55, "attempts": 4},
-    {"skill": "prepositions", "mastery": 0.42, "attempts": 3},
-    {"skill": "concrete-description", "mastery": 0.61, "attempts": 5},
-    {"skill": "rhythm", "mastery": 0.38, "attempts": 2},
-    {"skill": "transitions", "mastery": 0.47, "attempts": 3},
-]
 
 
 def _mode_value(ex: Exercise) -> str:
@@ -61,10 +54,60 @@ class LabState(rx.State):
     mode: str = Mode.ACADEMIC.value
 
     # --- session progress (NOT persisted to the DB, by design) --------------
+    user_id: str = "demo-user"
     xp: int = 0
     streak: int = 1
     completed_ids: list[str] = []
-    mastery: list[dict] = _SEED_MASTERY      # [{skill, mastery, attempts}]
+    mastery: list[dict] = []      # [{skill, mastery, attempts, independent_attempts, delayed_attempts, last_seen_iso, due_iso}]
+
+    @rx.event
+    def on_load(self):
+        from services.progress_service import get_user_attempts
+        from domain.mastery import update_mastery
+        from domain.models import MasterySnapshot
+        
+        attempts = get_user_attempts(self.user_id)
+        if not attempts:
+            return
+            
+        seen = set()
+        mastery_dict = {}
+        xp_total = 0
+        
+        for attempt in attempts:
+            if attempt.passed:
+                seen.add(attempt.exercise_id)
+                # recompute xp? In minimal persistence we didn't store xp_awarded in this table, but we can just leave xp=0 or recalculate
+                xp_total += 10 # dummy 
+                
+            skill = "unknown"
+            for ex in _EXERCISES:
+                if ex.exercise_id == attempt.exercise_id:
+                    skill = ex.skill
+                    break
+            
+            if skill != "unknown":
+                prev = mastery_dict.get(skill)
+                # Just mock update
+                snap = update_mastery(prev, skill, attempt.quality, attempt.hint_level)
+                # Note: This is an approximation since update_mastery checks current time vs last_seen
+                mastery_dict[skill] = snap
+                
+        self.completed_ids = list(seen)
+        self.xp = xp_total
+        
+        m_list = []
+        for snap in mastery_dict.values():
+            m_list.append({
+                "skill": snap.skill, 
+                "mastery": snap.mastery, 
+                "attempts": snap.attempts,
+                "independent_attempts": snap.independent_attempts,
+                "delayed_attempts": snap.delayed_attempts,
+                "last_seen_iso": snap.last_seen_iso,
+                "due_iso": snap.due_iso
+            })
+        self.mastery = m_list
 
     # --- topic focus: practise one skill/category to memorise it ------------
     selected_skill: str = ""                 # "" means practise everything
@@ -94,6 +137,8 @@ class LabState(rx.State):
     live_diagnostics: list[dict] = []        # [{type, text, severity, message}]
     live_verdict: str = ""
 
+    all_completed: bool = False
+
     # --- feedback after grading --------------------------------------------
     fb_total: int = 0
     fb_out_of: int = 100
@@ -115,6 +160,7 @@ class LabState(rx.State):
     fw_diagnostics: list[dict] = []
     fw_openings: list[dict] = []              # [{word, count}]
     fw_ai_note: str = ""
+    fw_last_analysed_text: str = ""
 
     # ------------------------------------------------------------- computed
     @rx.var
@@ -162,8 +208,49 @@ class LabState(rx.State):
 
     @rx.var
     def progress_pct(self) -> int:
-        total = len([e for e in _EXERCISES if _mode_value(e) in (self.mode, "both")]) or 1
-        return int(round(100 * len(self.completed_ids) / total))
+        from domain.exercises import calculate_progress_pct
+        return calculate_progress_pct(self._mode_pool(), set(self.completed_ids))
+
+    @rx.var
+    def mastery_display_list(self) -> list[dict]:
+        from domain.mastery import derive_evidence_state
+        from domain.models import MasterySnapshot
+        out = []
+        for skill in self.available_skills:
+            m_dict = next((m for m in self.mastery if m["skill"] == skill), None)
+            if m_dict:
+                snap = MasterySnapshot(
+                    skill=skill,
+                    mastery=m_dict.get("mastery", 0.0),
+                    attempts=m_dict.get("attempts", 0),
+                    independent_attempts=m_dict.get("independent_attempts", 0),
+                    delayed_attempts=m_dict.get("delayed_attempts", 0),
+                    last_seen_iso=m_dict.get("last_seen_iso"),
+                    due_iso=m_dict.get("due_iso")
+                )
+            else:
+                snap = None
+            
+            state_label = derive_evidence_state(snap)
+            attempts = snap.attempts if snap else 0
+            
+            # format date
+            date_str = ""
+            if snap and snap.last_seen_iso:
+                try:
+                    from datetime import datetime
+                    dt = datetime.fromisoformat(snap.last_seen_iso)
+                    date_str = dt.strftime("%b %d, %Y")
+                except Exception:
+                    pass
+                    
+            out.append({
+                "skill": skill,
+                "state": state_label,
+                "attempts": attempts,
+                "date": date_str,
+            })
+        return out
 
     # ------------------------------------------------------- topic focus events
     @rx.event
@@ -210,16 +297,8 @@ class LabState(rx.State):
         if not self.selected_skill:
             return next_exercise(_EXERCISES, Mode(self.mode), seen)
 
-        pool = [e for e in self._mode_pool() if e.skill == self.selected_skill]
-        if not pool:
-            return None
-        unseen = [e for e in pool if e.exercise_id not in seen]
-        if unseen:
-            unseen.sort(key=lambda e: e.difficulty)
-            return unseen[0]
-        # everything in this topic seen: cycle for repetition
-        pool.sort(key=lambda e: e.difficulty)
-        return pool[len(self.completed_ids) % len(pool)]
+        from domain.exercises import pick_focused_exercise
+        return pick_focused_exercise(self._mode_pool(), self.selected_skill, seen)
 
     def _apply_exercise(self, ex: Exercise):
         self.ex_id = ex.exercise_id
@@ -239,7 +318,10 @@ class LabState(rx.State):
     def load_next(self):
         ex = self._pick_next()
         if ex is not None:
+            self.all_completed = False
             self._apply_exercise(ex)
+        else:
+            self.all_completed = True
 
     @rx.event
     def generate_fresh_drill(self):
@@ -397,7 +479,7 @@ class LabState(rx.State):
             [] if correct
             else [{"issue": "Not quite.", "suggestion": "Re-read each option and ask which one you can picture."}]
         )
-        self._award(xp, quality)
+        self._award(correct, xp, quality)
 
     def _apply_grade_result(self, result):
         self.fb_total = result.total
@@ -416,26 +498,61 @@ class LabState(rx.State):
         self.fb_model_revision = getattr(result, "model_revision", "") or ""
         self.fb_coaching_note = getattr(result, "coaching_note", "") or ""
         quality = (result.total / result.out_of) if result.out_of else 0.0
-        self._award(result.xp_awarded, quality)
+        self._award(result.passed, result.xp_awarded, quality)
 
-    def _award(self, xp: int, quality: float):
-        """Session-only. Skipped entirely in casual mode. Never touches a
-        database, so it can never crash the app."""
-        if self.casual_mode:
-            return
-        self.xp += xp
-        if self.ex_id and self.ex_id not in self.completed_ids:
-            self.completed_ids = self.completed_ids + [self.ex_id]
-        self._update_mastery(self.ex_skill, quality)
+    def _award(self, passed: bool, xp: int, quality: float):
+        """Session-only. Never touches a database, so it can never crash the app."""
+        from domain.scoring import evaluate_award
+        from services.progress_service import record_attempt
+        from datetime import datetime, timezone
+        
+        outcome = evaluate_award(
+            exercise_id=self.ex_id,
+            passed=passed,
+            quality=quality,
+            xp_from_rubric=xp,
+            already_completed=frozenset(self.completed_ids)
+        )
+        
+        self.xp += outcome.xp_delta
+        if outcome.completed_id:
+            self.completed_ids = self.completed_ids + [outcome.completed_id]
+        if outcome.mastery_quality is not None:
+            self._update_mastery(self.ex_skill, outcome.mastery_quality, self.hint_level)
+            
+        record_attempt(
+            user_id=self.user_id,
+            exercise_id=self.ex_id,
+            passed=passed,
+            quality=quality,
+            hint_level=self.hint_level,
+            timestamp_iso=datetime.now(timezone.utc).isoformat()
+        )
 
-    def _update_mastery(self, skill: str, quality: float):
+    def _update_mastery(self, skill: str, quality: float, hint_level: int):
         prev = None
         for m in self.mastery:
             if m["skill"] == skill:
-                prev = MasterySnapshot(skill=skill, mastery=m["mastery"], attempts=m.get("attempts", 0))
+                prev = MasterySnapshot(
+                    skill=skill, 
+                    mastery=m.get("mastery", 0.0), 
+                    attempts=m.get("attempts", 0),
+                    independent_attempts=m.get("independent_attempts", 0),
+                    delayed_attempts=m.get("delayed_attempts", 0),
+                    last_seen_iso=m.get("last_seen_iso"),
+                    due_iso=m.get("due_iso")
+                )
                 break
-        snap = update_mastery(prev, skill, quality)
-        row = {"skill": snap.skill, "mastery": snap.mastery, "attempts": snap.attempts}
+        snap = update_mastery(prev, skill, quality, hint_level)
+        row = {
+            "skill": snap.skill, 
+            "mastery": snap.mastery, 
+            "attempts": snap.attempts,
+            "independent_attempts": snap.independent_attempts,
+            "delayed_attempts": snap.delayed_attempts,
+            "last_seen_iso": snap.last_seen_iso,
+            "due_iso": snap.due_iso
+        }
         updated = False
         new_list = []
         for m in self.mastery:
@@ -469,8 +586,14 @@ class LabState(rx.State):
             {"word": w, "count": c} for w, c in diag.repeated_openings(text).most_common(6)
         ]
         self.fw_analysed = True
-        if not self.casual_mode:
-            self.xp += 20
+        
+        from domain.scoring import evaluate_free_write
+        outcome = evaluate_free_write(
+            word_count=len(text.split()),
+            text_changed=(text != self.fw_last_analysed_text)
+        )
+        self.xp += outcome.xp_delta
+        self.fw_last_analysed_text = text
 
         yield  # flush the profile before any network call
 

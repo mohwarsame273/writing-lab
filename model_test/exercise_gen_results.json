@@ -1,0 +1,56 @@
+{
+  "gemini-2.5-flash": {
+    "exercise_id": "transitions_academic_001",
+    "kind": "selection",
+    "mode": "academic",
+    "skill": "transitions",
+    "prompt": "Select the most effective transition word or phrase to logically connect the two sentences in the academic paragraph below, ensuring smooth flow and clear argumentation.",
+    "seed_text": "The preliminary findings suggest a strong correlation between increased screen time and decreased attention spans in adolescents. __________, further longitudinal studies are required to establish a causal relationship and control for confounding variables.",
+    "target": "However",
+    "options": [
+      "Consequently",
+      "Furthermore",
+      "However",
+      "In addition"
+    ],
+    "answer_index": 2,
+    "hints": [
+      "Consider the relationship between the first sentence (a finding) and the second sentence (a qualification or limitation of that finding).",
+      "Is the second sentence adding more information, showing a result, or presenting a contrasting or qualifying idea?",
+      "Academic writing often requires careful qualification of claims, which often use specific transition words."
+    ],
+    "rule_ids": [
+      "TRANSITION_CONTRAST",
+      "ACADEMIC_QUALIFICATION",
+      "COHESION_SENTENCE_LEVEL"
+    ],
+    "max_xp": 75,
+    "difficulty": 3
+  },
+  "gemini-3.8-flash": {
+    "exercise_id": "acad_trans_010",
+    "kind": "multiple_choice",
+    "mode": "academic",
+    "skill": "transitions",
+    "prompt": "Choose the transition that best establishes the logical relationship between the initial claim and the conflicting empirical evidence.",
+    "seed_text": "Proponents assert that automated triage protocols accelerate the manuscript review cycle; [____], empirical audits demonstrate that such systems systematically disfavor interdisciplinary research methodologies.",
+    "target": "[____]",
+    "options": [
+      "for instance",
+      "conversely",
+      "subsequently",
+      "furthermore"
+    ],
+    "answer_index": 1,
+    "hints": [
+      "Examine the logical connection between the first clause (claimed benefit) and the second clause (systemic limitation).",
+      "The second clause presents counter-evidence that complicates the initial assertion, requiring an adversative transition rather than additive, sequential, or illustrative markers."
+    ],
+    "rule_ids": [
+      "academic_transitions_contrast",
+      "logical_cohesion_discourse_markers"
+    ],
+    "max_xp": 20,
+    "difficulty": 3
+  }
+}

@@ -132,5 +132,7 @@ class MasterySnapshot:
     skill: str
     mastery: float   # 0..1
     attempts: int
+    independent_attempts: int = 0
+    delayed_attempts: int = 0
     last_seen_iso: Optional[str] = None
     due_iso: Optional[str] = None   # next spaced-repetition slot

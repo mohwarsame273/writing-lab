@@ -81,7 +81,7 @@ def grade(
         try:
             client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
             response = client.models.generate_content(
-                model="gemini-2.5-flash",
+                model="gemini-3.8-flash",
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     system_instruction=_SYSTEM,
@@ -156,7 +156,7 @@ def free_write_note(text: str) -> tuple[str, Optional[str]]:
     try:
         client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-3.8-flash",
             contents=prompt,
             config=types.GenerateContentConfig(
                 temperature=0.4,

@@ -32,7 +32,7 @@ def generate_exercise(mode: Mode, skill: str) -> tuple[Optional[Exercise], Optio
     try:
         client = genai.Client(api_key=os.getenv("GOOGLE_API_KEY"))
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-3.8-flash",
             contents=prompt,
             config=types.GenerateContentConfig(
                 system_instruction=_GEN_SYSTEM,

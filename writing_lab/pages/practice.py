@@ -13,6 +13,7 @@ from writing_lab.components.common import pill, section_heading
 from writing_lab.components.editor import editor
 from writing_lab.components.feedback_panel import feedback_panel
 from writing_lab.components.hint_panel import hint_panel
+from writing_lab.components.suggestions import suggestions_panel
 from writing_lab.layout import shell
 from writing_lab.state.lab_state import LabState
 
@@ -219,6 +220,7 @@ def _right_pane() -> rx.Component:
             rx.vstack(
                 _work_area(),
                 rx.cond(~LabState.is_selection, hint_panel(), _selection_hint()),
+                suggestions_panel(),
                 _submit_bar(),
                 spacing="4", width="100%", align_items="stretch", min_width="0",
             ),
@@ -227,11 +229,27 @@ def _right_pane() -> rx.Component:
     )
 
 
+def _all_completed_pane() -> rx.Component:
+    return rx.box(
+        rx.vstack(
+            rx.icon("party-popper", size=40, color=t.PURPLE),
+            rx.heading("All caught up!", size="6"),
+            rx.text("You've completed all exercises in this topic. Switch topics or generate a fresh drill.", color=t.SLATE, text_align="center"),
+            spacing="4", align_items="center",
+            padding="40px",
+        ),
+        style=t.CARD, width="100%", min_width="0"
+    )
+
 def practice() -> rx.Component:
     return shell(
         rx.grid(
             _left_rail(),
-            _right_pane(),
+            rx.cond(
+                LabState.all_completed,
+                _all_completed_pane(),
+                _right_pane(),
+            ),
             columns=rx.breakpoints(initial="1", md="340px 1fr"),
             spacing="6",
             width="100%",
